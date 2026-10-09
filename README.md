@@ -1,8 +1,8 @@
-# Zafar Ahmad - Research, Engineering & Zavect
+# Zafar Ahmad - Research, Engineering & PhonoAxis
 
-Static website with dedicated cardiovascular research and audio/acoustic engineering portfolios and a working venture page. Updated 9 October 2026. Intended owner: ZAFAR-AHMAD-5359.
+Static website with dedicated cardiovascular research and audio/acoustic engineering portfolios and a PhonoAxis venture page. Updated 10 October 2026. Intended owner: ZAFAR-AHMAD-5359.
 
-This public package includes reviewed website files, the adapted academic CV, the supplied ESC presentation photograph and two original method schematics. Private application records, client recordings, private project code and thesis/manuscript drafts are excluded.
+This public package includes reviewed website files, the adapted academic CV, the supplied ESC presentation photograph two original method schematics and the selected PhonoAxis symbol/favicon. Private application records, client recordings, private project code and thesis/manuscript drafts are excluded.
 
 ## Preview
 
@@ -17,6 +17,6 @@ Put these files at the repository root. In Settings > Pages > Build and deployme
 
 Relative links support an account website or project repository website. No custom domain is configured. Upload this public release rather than the surrounding private review workspace.
 
-Zavect is a working brand. Journal manuscripts under revision are not accepted publications. Cardiac and wearable work remain research. The website performs no inference or patient-data collection.
+PhonoAxis is a venture in development. Journal manuscripts under revision are not accepted publications. Cardiac and wearable work remain research. The website performs no inference or patient-data collection.
 
 Website/image rights remain with their respective owners. Client audio and private project code are not distributed or licensed by this package.

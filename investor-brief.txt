@@ -1,7 +1,7 @@
-﻿ZAVECT - SIGNAL INTELLIGENCE & ENGINEERING
-Updated 9 October 2026
+﻿PHONOAXIS - BIOSIGNAL & ACOUSTIC ENGINEERING
+Updated 10 October 2026
 
-Zavect is the working name for Zafar Ahmad's venture in development. The provisional direction combines practical signal-processing services with cardiovascular research.
+PhonoAxis is Zafar Ahmad's venture in development. The provisional direction combines practical signal-processing services with cardiovascular research.
 
 Engineering foundation:
 Audio restoration and diagnostics, acoustic comparisons, Python/MATLAB analysis workflows, compact audio classifiers and offline signal-driven prototypes.
@@ -20,5 +20,5 @@ No incorporation, awarded venture funding, patents, commercial cardiac deploymen
 Founder: Zafar Ahmad
 Contact: ahmadzafar577@gmail.com
 
-The final name, business focus and domain remain to be refined. Preliminary naming research is not trademark or domain clearance.
+The selected venture name is PhonoAxis. The business focus and domain remain to be refined. Preliminary naming research is not trademark or domain clearance.
 

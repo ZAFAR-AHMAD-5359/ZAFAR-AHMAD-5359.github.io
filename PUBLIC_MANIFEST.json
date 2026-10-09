@@ -1,16 +1,18 @@
 {
-  "index.html": "3c2c904580ae9431ceca63e61e1543d787619d713426b0e8ba98b5c60b5696c0",
-  "research.html": "954247be72b0c5a3f13a06e89e7c8b3b013f7fa75c9f2a0b687e88b010df7845",
-  "audio.html": "e4918654d0495cc9daf5387422a60c803a5ce0538a0141a3fbd8d9cd9c968c41",
-  "startup.html": "2c5917b385d55fa84fedb1e6f6147d8c46bbbfa289c4fee3de12d7a57a9bcf31",
-  "styles.css": "87d426f95bc01ee49c741d55aaa0b9c7eb9c10e3d2a3948423b6c486055dadab",
+  "index.html": "95a5aa9b95e86b9128120ac7c6bb5364c9ad8db550bdd4a59644d6f5f8f1980b",
+  "research.html": "3b014082d1cf65f028e65a742e8535904f570eef5ca632e6f1030817a7eb701d",
+  "audio.html": "87fadbbecf9819c4281639b9de9df9a981d6c063fb54fb79044f550bdfd22fce",
+  "startup.html": "8fc547f42fb71625342c43f6f48735f8d5e904120955ae9a7a0606eb957011fb",
+  "styles.css": "d132550053b9e35f491cf70d07061317972aaa12bc73b3dd1a8b174848cd6639",
   "system.css": "9d8d8f8abe55f49132fed24cf04f75f9d118daa9fbc7384e9aba3120701d3396",
   "app.js": "2284dba44999dcdc700978103e8c650e045f2cb42d5ddf0a93e6c9e68c44f444",
   "pipeline.js": "8f5071b5d5f2e58751f19d6e3be1cf6dce5a8c4a48454d918027b4e9a0d2f42f",
   "research-brief.txt": "3534bde6c1b42009d99e794dd2d4c3d7d41a86cf00837a7caa202669bc717726",
-  "investor-brief.txt": "ed5b9ea509f3fe8ce43a101e7ea576e33e720be4bf5b747faf0dc159a12b05a4",
+  "investor-brief.txt": "aae7b5a048bb673acc7547da39a0aa1981d78c23e03f4154aadf1a38f6255e62",
   "assets/esc-2026-presentation.jpeg": "3774eaf3511a53c196cbbdc093df6dad259848121e22d0a36c4eb6ba542d1fd4",
   "assets/compact-audio-classifier-method.svg": "6ff4cfed29bdb94c277aa67014b50200011cadc14014ed244b20dc9192b54627",
   "assets/offline-audio-haptics-method.svg": "7d3a75b1207aa75b378141cfac1c9319bf30e4127e3f61d442e3e0cdf2e4a40b",
-  "downloads/Zafar-Ahmad-Academic-CV.pdf": "2b092ea055eabae708368856a8e6662c0d23407ff0ff158471b4383f854d72af"
+  "downloads/Zafar-Ahmad-Academic-CV.pdf": "2b092ea055eabae708368856a8e6662c0d23407ff0ff158471b4383f854d72af",
+  "assets/phonoaxis-symbol.svg": "cbb8247a7f5bfa136dd316e2fcb7c820dad623d6acb7dcfe4ff7e27759de42d6",
+  "assets/phonoaxis-favicon.svg": "a60d4489ef13e4fe6b91a51098c6c93f30f6fbbf033fff1f25630e4cec9776c5"
 }

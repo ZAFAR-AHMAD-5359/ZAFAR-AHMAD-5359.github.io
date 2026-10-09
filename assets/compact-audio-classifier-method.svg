@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="440" viewBox="0 0 1280 440" role="img" aria-labelledby="title desc">
+  <title id="title">Compact audio classifier: feature extraction to embedded export</title>
+  <desc id="desc">A method schematic showing FFT-band features with shape eight by thirty-two by one, a compact convolutional network with 1,254 parameters, TensorFlow Lite conversion, and C byte-array export. This schematic describes a reviewed offline training and export workflow, not a device performance benchmark.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#287f80"/></marker></defs>
+  <rect width="1280" height="440" rx="28" fill="#f6f7f2"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="60" y="66" font-size="16" letter-spacing="2" fill="#287f80">AUDIO MACHINE LEARNING</text>
+    <text x="60" y="122" font-size="37" font-weight="700" fill="#162c3b">A compact path from sound to embedded export</text>
+    <text x="60" y="159" font-size="20" fill="#53616a">Noise / inhalation classification</text>
+    <g fill="#ffffff" stroke="#cad8d6" stroke-width="2">
+      <rect x="60" y="226" width="254" height="176" rx="16"/>
+      <rect x="362" y="226" width="254" height="176" rx="16"/>
+      <rect x="664" y="226" width="254" height="176" rx="16"/>
+      <rect x="966" y="226" width="254" height="176" rx="16"/>
+    </g>
+    <g stroke="#287f80" stroke-width="3" marker-end="url(#arrow)">
+      <path d="M315 314 H349"/><path d="M617 314 H651"/><path d="M919 314 H953"/>
+    </g>
+    <g fill="#287f80" font-size="16" font-weight="700">
+      <text x="84" y="264">01 / REPRESENT</text><text x="386" y="264">02 / CLASSIFY</text><text x="688" y="264">03 / CONVERT</text><text x="990" y="264">04 / PACKAGE</text>
+    </g>
+    <g fill="#162c3b" font-size="25" font-weight="700">
+      <text x="84" y="309">FFT-band features</text><text x="386" y="309">Compact CNN</text><text x="688" y="309">TensorFlow Lite</text><text x="990" y="309">C byte array</text>
+    </g>
+    <g fill="#53616a" font-size="20">
+      <text x="84" y="350">8 × 32 × 1 input</text><text x="386" y="350">1,254 parameters</text><text x="688" y="350">Representative-data</text><text x="688" y="377">quantization workflow</text><text x="990" y="350">Model export artifact</text>
+    </g>
+  </g>
+</svg>

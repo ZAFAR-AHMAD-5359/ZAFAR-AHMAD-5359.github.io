@@ -1,0 +1,24 @@
+﻿ZAVECT - SIGNAL INTELLIGENCE & ENGINEERING
+Updated 9 October 2026
+
+Zavect is the working name for Zafar Ahmad's venture in development. The provisional direction combines practical signal-processing services with cardiovascular research.
+
+Engineering foundation:
+Audio restoration and diagnostics, acoustic comparisons, Python/MATLAB analysis workflows, compact audio classifiers and offline signal-driven prototypes.
+
+Cardiac research foundation:
+An MS thesis, two published first-author conference papers, two ESC Congress 2026 presentations and two first-author journal manuscripts under revision. No journal acceptance is implied.
+
+Research question:
+Can acoustic recordings provide reliable timing information for phase-aware murmur analysis? The value of automatically inferred timing for unseen patients remains under evaluation. The website's conceptual traces are illustrations, not model inference.
+
+Next steps:
+Focused engineering delivery, matched patient-grouped comparisons, transfer across recording systems and research-supported product definition.
+
+No incorporation, awarded venture funding, patents, commercial cardiac deployments or clinical approval are claimed. Clinical use requires further evidence.
+
+Founder: Zafar Ahmad
+Contact: ahmadzafar577@gmail.com
+
+The final name, business focus and domain remain to be refined. Preliminary naming research is not trademark or domain clearance.
+

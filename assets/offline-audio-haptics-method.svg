@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="570" viewBox="0 0 1280 570" role="img" aria-labelledby="title desc">
+  <title id="title">Offline audio-to-haptics processing workflow</title>
+  <desc id="desc">Stereo audio is converted to spectral and onset features, passed through event rules and configurable motion mappings, smoothed and bounded, and exported as CSV samples spaced two milliseconds apart. Five hundred hertz describes the output timeline, not a measured live processing rate.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#287f80"/></marker></defs>
+  <rect width="1280" height="570" rx="28" fill="#f6f7f2"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="60" y="66" font-size="16" letter-spacing="2" fill="#287f80">SIGNAL PROCESSING + SOFTWARE</text>
+    <text x="60" y="122" font-size="37" font-weight="700" fill="#162c3b">Turning game audio into a motion timeline</text>
+    <text x="60" y="159" font-size="20" fill="#53616a">An offline processing pipeline with configurable event-to-motion mappings</text>
+    <g fill="#ffffff" stroke="#cad8d6" stroke-width="2">
+      <rect x="60" y="212" width="346" height="137" rx="16"/>
+      <rect x="467" y="212" width="346" height="137" rx="16"/>
+      <rect x="874" y="212" width="346" height="137" rx="16"/>
+      <rect x="60" y="407" width="346" height="137" rx="16"/>
+      <rect x="467" y="407" width="346" height="137" rx="16"/>
+      <rect x="874" y="407" width="346" height="137" rx="16"/>
+    </g>
+    <g stroke="#287f80" stroke-width="3" fill="none" marker-end="url(#arrow)">
+      <path d="M407 280 H453"/><path d="M814 280 H860"/><path d="M1047 350 V378 H233 V393"/>
+      <path d="M407 475 H453"/><path d="M814 475 H860"/>
+    </g>
+    <g fill="#287f80" font-size="16" font-weight="700">
+      <text x="84" y="247">01 / LOAD</text><text x="491" y="247">02 / MEASURE</text><text x="898" y="247">03 / DETECT</text>
+      <text x="84" y="442">04 / MAP</text><text x="491" y="442">05 / CONDITION</text><text x="898" y="442">06 / EXPORT</text>
+    </g>
+    <g fill="#162c3b" font-size="25" font-weight="700">
+      <text x="84" y="285">Stereo audio</text><text x="491" y="285">Spectral / onset features</text><text x="898" y="285">Event rules</text>
+      <text x="84" y="480">Motion parameters</text><text x="491" y="480">Smoothing + bounds</text><text x="898" y="480">CSV timeline</text>
+    </g>
+    <g fill="#53616a" font-size="20">
+      <text x="84" y="320">File-based preprocessing</text><text x="491" y="320">Energy, bands, stereo balance</text><text x="898" y="320">Transient and low-band cues</text>
+      <text x="84" y="515">Pitch, roll, heave, vibration</text><text x="491" y="515">Configurable output limits</text><text x="898" y="515">2 ms sample spacing</text>
+    </g>
+  </g>
+</svg>

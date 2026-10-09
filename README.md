@@ -2,7 +2,7 @@
 
 Static website with dedicated cardiovascular research and audio/acoustic engineering portfolios and a PhonoAxis venture page. Updated 10 October 2026. Intended owner: ZAFAR-AHMAD-5359.
 
-This public package includes reviewed website files, the adapted academic CV, the supplied ESC presentation photograph two original method schematics and the selected PhonoAxis symbol/favicon. Private application records, client recordings, private project code and thesis/manuscript drafts are excluded.
+This public package includes reviewed website files, the adapted academic CV, the supplied ESC presentation photograph, two original method schematics and the selected PhonoAxis symbol/favicon. Private application records, client recordings, private project code and thesis/manuscript drafts are excluded.
 
 ## Preview
 

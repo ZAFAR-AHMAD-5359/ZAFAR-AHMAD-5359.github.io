@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zafar-ahmad-5359.github.io/sitemap.xml

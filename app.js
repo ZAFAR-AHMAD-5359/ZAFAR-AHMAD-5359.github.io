@@ -22,3 +22,6 @@ document.addEventListener('click', event => {
 });
 const narrowScreen = window.matchMedia('(max-width: 760px)');
 narrowScreen.addEventListener('change', () => closeMenu());
+// Collapse mobile navigation only after its controls are ready.
+// If this script fails or is disabled, the ordinary links remain available.
+document.documentElement.classList.add('nav-ready');

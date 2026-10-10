@@ -1,22 +1,206 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Zafar Ahmad — Audio & Acoustic Engineering Portfolio</title><meta name="description" content="Audio and acoustic signal-processing projects by Zafar Ahmad: restoration, acoustic comparison, compact classifiers, haptics and MATLAB denoising."><meta name="theme-color" content="#192321"><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%23192321'/%3E%3Cpath d='M6 17h5l3-9 4 16 3-7h5' fill='none' stroke='%23f5f5f2' stroke-width='2'/%3E%3C/svg%3E"><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script></head><body class="audio-page"><a class="skip-link" href="#main">Skip to content</a><header class="site-header shell">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zafar Ahmad — Audio &amp; Acoustic Engineering Portfolio</title>
+  <meta name="description" content="Audio and acoustic signal-processing projects by Zafar Ahmad: recording investigation, comparison reports, compact classifiers, offline haptics and MATLAB DSP. Inspect an original synthetic analysis example.">
+  <meta name="theme-color" content="#192321">
+  <link rel="canonical" href="https://zafar-ahmad-5359.github.io/audio.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Zafar Ahmad — Audio &amp; Acoustic Engineering">
+  <meta property="og:description" content="Five signal-processing cases, clearly scoped outputs and a reproducible synthetic recording-comparison example.">
+  <meta property="og:url" content="https://zafar-ahmad-5359.github.io/audio.html">
+  <meta property="og:image" content="https://zafar-ahmad-5359.github.io/assets/portfolio-social-preview.png">
+  <meta property="og:image:alt" content="Zafar Ahmad: cardiovascular research and audio engineering, with PhonoAxis biosignal and acoustic engineering.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Zafar Ahmad — Audio &amp; Acoustic Engineering">
+  <meta name="twitter:description" content="Five signal-processing cases and an original reproducible recording-comparison example.">
+  <meta name="twitter:image" content="https://zafar-ahmad-5359.github.io/assets/portfolio-social-preview.png">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%23192321'/%3E%3Cpath d='M6 17h5l3-9 4 16 3-7h5' fill='none' stroke='%23f5f5f2' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body class="audio-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header shell">
     <a class="wordmark" href="index.html" aria-label="Zafar Ahmad home">Zafar Ahmad<span>.</span></a>
     <button class="menu-toggle" aria-controls="site-nav" aria-expanded="false" type="button">Menu <span aria-hidden="true">+</span></button>
-    <nav id="site-nav" aria-label="Main navigation"><a href="index.html">Overview</a><a href="research.html">Cardiovascular research</a><a href="audio.html" aria-current="page">Audio & acoustics</a><a href="startup.html">PhonoAxis</a></nav>
-  </header><main id="main">
-<section class="page-hero shell" aria-labelledby="hero-title">
-  <div><p class="eyebrow">Audio & acoustic engineering portfolio</p><h1 id="hero-title">Practical tools.<br><em>Careful listening.</em></h1><p class="hero-copy">I build signal-processing workflows that make audio easier to analyse, compare and use—from noisy recordings to compact models and motion timelines.</p><div class="hero-actions"><a class="button" href="#projects">Selected projects</a><a class="button secondary" href="mailto:ahmadzafar577@gmail.com?subject=Audio%20or%20signal-processing%20project">Discuss a project</a></div></div>
-  <aside class="hero-aside"><strong>Audio DSP · Acoustic analysis · Applied machine learning</strong><p>Python and MATLAB engineering, with reproducible analysis, useful reports and clearly stated processing limits.</p><div class="tag-list"><span class="tag">Python / SciPy</span><span class="tag">MATLAB / Simulink</span><span class="tag">TensorFlow Lite</span><span class="tag">Audio software</span></div></aside>
-</section>
-<nav class="section-nav shell" aria-label="Engineering page sections"><a href="#projects">Selected projects</a><a href="#capabilities">Capabilities</a><a href="#process">Project approach</a><a href="#contact">Contact</a></nav>
-<section id="projects" class="section shell" aria-labelledby="projects-title">
-  <div class="section-top"><div><p class="section-label">Selected engineering work</p><h2 id="projects-title">From the problem<br>to <em>the deliverable.</em></h2><p class="section-intro">These summaries describe completed analysis work and implemented prototypes. Client recordings and private source code are kept confidential.</p></div></div>
-  <article id="restoration" class="project"><div class="project-meta"><span class="project-number">01</span><span>Audio restoration & investigation</span><span class="badge">Analysis & reporting</span></div><div class="project-content"><h3>Investigating noisy, low-bandwidth recordings</h3><p>Four difficult recordings needed a structured assessment of background noise, discrete events and possible speech. I combined spectral analysis with classical processing and multiple speech-enhancement models, then used independent event and voice-activity diagnostics to assess the outputs.</p><dl class="facts"><div><dt>Problem</dt><dd>Interference and limited bandwidth made useful events difficult to examine.</dd></div><div><dt>Method</dt><dd>Welch/STFT analysis, filtering, neural enhancement and cross-model comparison.</dd></div><div><dt>Deliverable</dt><dd>Restoration outputs and reports distinguishing candidate speech, tonal interference and unresolved events.</dd></div></dl><div class="tag-list"><span class="tag">Python</span><span class="tag">DeepFilterNet3</span><span class="tag">MetricGAN+</span><span class="tag">SepFormer</span><span class="tag">Silero VAD</span></div><details><summary>What the analysis can establish</summary><p>Enhancement can support listening and investigation. A voice-activity score does not certify words, speaker identity or recording authenticity, and enhancement models can introduce artefacts. Reports retain these limits rather than promise recovered speech.</p></details></div></article>
-  <article id="acoustic-comparison" class="project"><div class="project-meta"><span class="project-number">02</span><span>Acoustic comparison</span><span class="badge">Analysis workflows & reports</span></div><div class="project-content"><h3>Repeatable analysis across recording conditions</h3><p>Successive turntable accessory experiments needed a consistent reporting workflow. I developed tools to compare spectra, band energy, recording dynamics and channel relationships across test rounds, with one combined report covering 156 mat/clamp configurations.</p><dl class="facts"><div><dt>Problem</dt><dd>Many recording conditions required consistent comparisons and readable outputs.</dd></div><div><dt>Method</dt><dd>Batch analysis, frequency-band summaries, comparative plots and structured reporting.</dd></div><div><dt>Deliverable</dt><dd>Analysis scripts, comparison figures and reports across repeated experiments.</dd></div></dl><p>Interpretation depends on recording controls, calibration and consistent metric definitions. Recording differences alone do not establish a hardware-performance advantage.</p><div class="tag-list"><span class="tag">NumPy / SciPy</span><span class="tag">pandas</span><span class="tag">librosa</span><span class="tag">matplotlib</span></div></div></article>
-  <article id="compact-classifier" class="project"><div class="project-meta"><span class="project-number">03</span><span>Compact acoustic classification</span><span class="badge">Model & export workflow</span></div><div class="project-content"><h3>A small sound classifier with an embedded export path</h3><p>An acoustic device project required a compact model to distinguish inhalation sounds from background noise. The implementation uses FFT-band features and a 1,254-parameter convolutional network, followed by TensorFlow Lite conversion and C byte-array export.</p><dl class="facts"><div><dt>Input</dt><dd>Eight frames of 32 FFT-band features.</dd></div><div><dt>Method</dt><dd>Compact CNN training and representative-data conversion.</dd></div><div><dt>Deliverable</dt><dd>Saved model, evaluation and export artefacts for device integration.</dd></div></dl><figure><img src="assets/compact-audio-classifier-method.svg" width="1280" height="440" loading="lazy" alt="FFT-band features feed a compact convolutional classifier, followed by TensorFlow Lite conversion and C model export"><figcaption>Feature preparation, model development and export. Device latency and clinical performance require separate testing. <a class="text-link" href="assets/compact-audio-classifier-method.svg">Open workflow diagram</a>.</figcaption></figure><div class="tag-list"><span class="tag">TensorFlow / Keras</span><span class="tag">FFT features</span><span class="tag">TensorFlow Lite</span><span class="tag">C export</span></div></div></article>
-  <article id="haptics" class="project"><div class="project-meta"><span class="project-number">04</span><span>Audio-driven motion</span><span class="badge">Offline prototype</span></div><div class="project-content"><h3>Turning game audio into a motion timeline</h3><p>I built a modular workflow that extracts spectral and onset features, applies event rules and configurable motion mappings, conditions the resulting signals and exports a motion/vibration timeline.</p><dl class="facts"><div><dt>Problem</dt><dd>Translate audio events into configurable motion and vibration parameters.</dd></div><div><dt>Method</dt><dd>File-based feature extraction, rule-based mapping, smoothing and output bounds.</dd></div><div><dt>Deliverable</dt><dd>Python modules, presets and CSV timelines demonstrated with synthetic examples.</dd></div></dl><figure><img src="assets/offline-audio-haptics-method.svg" width="1280" height="570" loading="lazy" alt="File-based stereo audio flows through spectral features, event rules, motion mapping and smoothing to a CSV timeline"><figcaption>The 2 ms spacing is the output time grid. Live processing and physical hardware integration remain separate validation tasks. <a class="text-link" href="assets/offline-audio-haptics-method.svg">Open workflow diagram</a>.</figcaption></figure><div class="tag-list"><span class="tag">Python</span><span class="tag">librosa</span><span class="tag">YAML configuration</span><span class="tag">CSV tooling</span></div></div></article>
-  <article id="matlab-denoising" class="project"><div class="project-meta"><span class="project-number">05</span><span>Audio DSP</span><span class="badge">MATLAB / Simulink prototype</span></div><div class="project-content"><h3>Classical denoising with an inspectable signal path</h3><p>A MATLAB/Simulink workflow compares spectral subtraction and Wiener filtering, using a noise estimate and before/after signal views to make the processing path easier to examine.</p><dl class="facts"><div><dt>Problem</dt><dd>Reduce unwanted components while retaining the useful audio content.</dd></div><div><dt>Method</dt><dd>Reference-based noise estimation and classical frequency-domain filtering.</dd></div><div><dt>Deliverable</dt><dd>An inspectable model and signal comparisons for algorithm development.</dd></div></dl><p>The saved demonstration supports the processing workflow; it does not establish a general intelligibility benchmark.</p><div class="tag-list"><span class="tag">MATLAB</span><span class="tag">Simulink</span><span class="tag">Spectral subtraction</span><span class="tag">Wiener filtering</span></div></div></article>
-</section>
-<section id="capabilities" class="section shell" aria-labelledby="capabilities-title"><div class="section-top"><div><p class="section-label">Capabilities</p><h2 id="capabilities-title">Signal analysis,<br><em>made usable.</em></h2></div></div><div class="details-grid"><article><h3>Audio & acoustic analysis</h3><p>Time-frequency analysis, filtering, event detection, comparative measurements and reports that connect metrics with listening.</p></article><article><h3>Applied machine learning</h3><p>Feature design, compact audio classifiers, training/evaluation workflows and export preparation for embedded integration.</p></article><article><h3>Research software</h3><p>Batch-processing tools, configurable pipelines, reproducible notebooks and MATLAB/Simulink prototypes.</p></article></div></section>
-<section id="process" class="section shell" aria-labelledby="process-title"><div class="split"><div><p class="eyebrow">Project approach</p><h2 id="process-title">A clear question.<br><em>A useful result.</em></h2><p class="section-intro">I scope the analysis around the decision or workflow the recording needs to support.</p></div><ol class="steps"><li><div><h3>Understand the recording and goal</h3><p>Define the input format, acquisition conditions, required outputs and criteria for a useful result.</p></div></li><li><div><h3>Build an inspectable baseline</h3><p>Start with signal diagnostics and a reproducible workflow; add models where they help answer the question.</p></div></li><li><div><h3>Deliver the workflow and its limits</h3><p>Provide the agreed outputs, supporting plots and clear notes on assumptions, failure modes and next tests.</p></div></li></ol></div></section>
-<section id="contact" class="contact" aria-labelledby="contact-title"><div class="shell"><div><h2 id="contact-title">Have a recording<br>or a signal problem?</h2><p>Share the goal, input format and expected deliverable. I’m open to audio analysis, acoustic reporting and signal-processing development projects.</p></div><div class="hero-actions"><a class="button" href="mailto:ahmadzafar577@gmail.com?subject=Audio%20or%20signal-processing%20project">Discuss a project</a><a class="button secondary" href="startup.html">PhonoAxis services</a></div></div></section></main><footer class="footer shell"><span>© 2026 Zafar Ahmad</span><div class="footer-links"><a href="https://github.com/ZAFAR-AHMAD-5359">GitHub</a><a href="https://scholar.google.com/citations?user=D5W9TVwAAAAJ&amp;hl=en">Google Scholar</a><a href="https://www.linkedin.com/in/zafar-ahmad-ab87b6183/">LinkedIn</a></div></footer></body></html>
+    <nav id="site-nav" aria-label="Main navigation"><a href="index.html">Overview</a><a href="research.html">Cardiovascular research</a><a href="audio.html" aria-current="page">Audio &amp; acoustics</a><a href="startup.html">PhonoAxis</a></nav>
+  </header>
+  <main id="main">
+    <section class="page-hero shell" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow">Audio &amp; acoustic engineering portfolio</p>
+        <h1 id="hero-title">Practical tools.<br><em>Careful listening.</em></h1>
+        <p class="hero-copy">I build signal-processing workflows for recording investigation, repeatable comparison reports, compact models and audio-driven motion timelines.</p>
+        <div class="hero-actions"><a class="button" href="#projects">Selected projects</a><a class="button secondary" href="#comparison-demo">Inspect an output example</a></div>
+      </div>
+      <aside class="hero-aside">
+        <strong>Audio DSP · Acoustic analysis · Applied machine learning</strong>
+        <p>Python and MATLAB engineering, with reproducible analysis, useful reports and clearly stated processing limits.</p>
+        <div class="tag-list"><span class="tag">Python / SciPy</span><span class="tag">MATLAB / Simulink</span><span class="tag">TensorFlow Lite</span><span class="tag">Audio software</span></div>
+      </aside>
+    </section>
+    <nav class="section-nav shell" aria-label="Engineering page sections"><a href="#projects">Selected projects</a><a href="#capabilities">Capabilities</a><a href="#process">Project approach</a><a href="#contact">Contact</a></nav>
+    <section id="projects" class="section shell" aria-labelledby="projects-title">
+      <div class="section-top"><div><p class="section-label">Selected engineering work</p><h2 id="projects-title">From the problem<br>to <em>the deliverable.</em></h2><p class="section-intro">Five case studies cover analysis work and implemented prototypes. The new synthetic example below makes a comparison output inspectable while client recordings and source code remain confidential.</p></div></div>
+      <nav class="case-index" aria-label="Audio case studies"><a href="#restoration">01 / Recording investigation</a><a href="#acoustic-comparison">02 / Recording comparison</a><a href="#compact-classifier">03 / Compact classifier</a><a href="#haptics">04 / Offline haptics</a><a href="#matlab-denoising">05 / MATLAB denoising</a></nav>
+
+      <article id="restoration" class="project">
+        <div class="project-meta"><span class="project-number">01</span><span>Audio restoration &amp; investigation</span><span class="badge">Analysis &amp; reporting</span><span class="meta-extra">Reports: August 2026</span></div>
+        <div class="project-content">
+          <h3>Investigating noisy, low-bandwidth recordings</h3>
+          <p>Four difficult recordings needed an assessment of background noise, discrete events and possible speech. I combined spectral analysis, classical processing and pretrained speech-enhancement models, then compared event and voice-activity diagnostics across the outputs.</p>
+          <dl class="facts">
+            <div><dt>Task</dt><dd>Examine events obscured by interference and limited bandwidth.</dd></div>
+            <div><dt>My role</dt><dd>Signal investigation, processing comparisons and preparation of the analysis reports.</dd></div>
+            <div><dt>Method</dt><dd>Welch spectra, short-time Fourier analysis, filtering, pretrained enhancement and cross-model comparison.</dd></div>
+            <div><dt>Output</dt><dd>Processed recordings and reports distinguishing candidate speech, tonal interference and unresolved events.</dd></div>
+            <div><dt>Evaluation</dt><dd>Compared spectral, event and voice-activity findings; no ground-truth transcript or measured intelligibility gain is established.</dd></div>
+            <div><dt>Dated evidence</dt><dd>Analysis reports dated August 2026.</dd></div>
+          </dl>
+          <p>The reports document candidate events and uncertainty; enhancement alone does not establish a transcript.</p>
+          <div class="tag-list"><span class="tag">Python</span><span class="tag">DeepFilterNet3</span><span class="tag">MetricGAN+</span><span class="tag">SepFormer</span><span class="tag">Silero VAD</span></div>
+          <details><summary>What the analysis can establish</summary><p>Enhancement can support listening and investigation. A voice-activity score does not certify words, speaker identity or recording authenticity, and enhancement models can introduce artefacts. Reports retain these limits rather than promise recovered speech.</p></details>
+        </div>
+      </article>
+
+      <article id="acoustic-comparison" class="project">
+        <div class="project-meta"><span class="project-number">02</span><span>Recording comparison</span><span class="badge">Analysis workflows &amp; reports</span><span class="meta-extra">Report rounds: 2024–2025</span></div>
+        <div class="project-content">
+          <h3>Repeatable analysis across recording conditions</h3>
+          <p>Successive turntable accessory experiments needed a consistent reporting workflow. I developed tools to compare spectra, band energy, recording dynamics and channel relationships across test rounds. One combined report covered 156 recorded mat/clamp combinations.</p>
+          <dl class="facts">
+            <div><dt>Task</dt><dd>Compare many recorded conditions consistently and present their differences clearly.</dd></div>
+            <div><dt>My role</dt><dd>Analysis scripting, comparative figures and structured reporting across successive rounds.</dd></div>
+            <div><dt>Method</dt><dd>Batch analysis, frequency-band summaries, comparison plots and common reporting templates.</dd></div>
+            <div><dt>Output</dt><dd>Analysis scripts, comparison figures and reports, including the 156-condition report.</dd></div>
+            <div><dt>Evaluation</dt><dd>Recording-level comparisons; interpretation depends on acquisition controls, calibration and consistent metric definitions.</dd></div>
+            <div><dt>Dated evidence</dt><dd>Comparison reports saved during 2024–2025.</dd></div>
+          </dl>
+          <p>Recording differences alone do not establish a hardware-performance advantage.</p>
+          <div class="tag-list"><span class="tag">NumPy / SciPy</span><span class="tag">pandas</span><span class="tag">librosa</span><span class="tag">matplotlib</span></div>
+
+          <aside id="comparison-demo" class="demo-block" aria-labelledby="comparison-demo-title">
+            <p class="eyebrow">Original public example · Synthetic inputs</p>
+            <h3 id="comparison-demo-title">Separate level changes from spectral changes</h3>
+            <p>This newly authored demonstration compares four generated two-second mono signals at 8,000 samples/s. It illustrates a reproducible report output, independently of the client study above.</p>
+            <p>RMS uses normalised digital amplitude; dBFS uses amplitude 1 as its reference.</p>
+            <p class="table-scroll-hint small-print">Scroll the table horizontally if needed.</p>
+            <div class="table-wrap" role="region" aria-label="Synthetic recording-comparison results" tabindex="0">
+              <table class="evidence-table demo-metrics">
+                <caption>Computed synthetic results</caption>
+                <thead><tr><th scope="col">Condition</th><th scope="col">RMS</th><th scope="col">Level<br>(dBFS)</th><th scope="col">100 Hz<br>power share</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">A / Baseline</th><td>0.158114</td><td>−16.02</td><td>80.00%</td></tr>
+                  <tr><th scope="row">B / More 100 Hz</th><td>0.291548</td><td>−10.71</td><td>94.12%</td></tr>
+                  <tr><th scope="row">C / Half amplitude</th><td>0.079057</td><td>−22.04</td><td>80.00%</td></tr>
+                  <tr><th scope="row">D / Added 3000 Hz</th><td>0.162019</td><td>−15.81</td><td>76.19%</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p><strong>What this shows:</strong> halving the amplitude in C lowers the RMS level by 6.02 dB relative to A, while the 100 Hz power share stays at 80%. A lower recorded level can occur without a change in relative spectral composition.</p>
+            <details><summary>Input controls, exact metrics and interpretation</summary>
+              <p>Each signal is the sum of zero-phase sine waves at 100, 1000 and 3000 Hz. Their amplitudes are A: 0.20/0.10/0.00; B: 0.40/0.10/0.00; C: 0.10/0.05/0.00; D: 0.20/0.10/0.05. Duration, sample rate and frequencies are fixed, with no random noise, normalisation or processing.</p>
+              <p>RMS is the square root of mean squared sample amplitude. Level is 20 log<sub>10</sub>(RMS). The 100 Hz power share is the exact coherent Fourier-bin power divided by total mean-square power. These tones complete integer cycles, so this example needs no window correction. The downloadable report gives the calculation and assumptions.</p>
+              <p>These are digital signal metrics, rather than calibrated sound-pressure levels or loudness. The example makes no claim about intelligibility, noise reduction or turntable hardware. Its coherent-tone assumptions require separate assessment for other recordings.</p>
+            </details>
+            <div class="inline-links"><a class="text-link" href="assets/recording-comparison-demo.svg">Open plotted comparison (SVG)</a><a class="text-link" href="assets/recording-comparison-demo.csv" download>Results &amp; input manifest (CSV)</a><a class="text-link" href="assets/recording-comparison-demo.txt" download>Methods &amp; report (TXT)</a><a class="text-link" href="assets/recording-comparison-demo.py" download>Reproduce with Python</a></div>
+            <p class="small-print">Original teaching example created for this portfolio on 10 October 2026, using no client files. Python 3.9+ and its standard library reproduce the CSV, plot and report.</p>
+          </aside>
+        </div>
+      </article>
+
+      <article id="compact-classifier" class="project">
+        <div class="project-meta"><span class="project-number">03</span><span>Compact acoustic classification</span><span class="badge">Model &amp; export workflow</span></div>
+        <div class="project-content">
+          <h3>A small sound classifier with an embedded export path</h3>
+          <p>An acoustic device project required a compact model to distinguish inhalation sounds from background noise. The project implementation uses 32 FFT-band features across eight frames and a 1,254-parameter convolutional network, followed by TensorFlow Lite conversion and C byte-array export.</p>
+          <dl class="facts">
+            <div><dt>Project scope</dt><dd>Feature preparation, offline classification and model-export artefacts for subsequent device integration.</dd></div>
+            <div><dt>Input &amp; method</dt><dd>8 × 32 × 1 feature input; compact CNN training and representative-data quantisation/conversion.</dd></div>
+            <div><dt>Output &amp; evaluation</dt><dd>Saved model, example-level evaluation and export artefacts prepared for a separate integration step.</dd></div>
+          </dl>
+          <figure>
+            <ol class="steps method-outline" aria-label="Compact classifier workflow">
+              <li><div><h3>Represent the recording</h3><p>Arrange eight frames of 32 FFT-band features as the model input.</p></div></li>
+              <li><div><h3>Train and evaluate offline</h3><p>Use a compact 1,254-parameter convolutional classifier for the recorded examples.</p></div></li>
+              <li><div><h3>Convert the model</h3><p>Prepare representative data for the TensorFlow Lite quantisation/conversion workflow.</p></div></li>
+              <li><div><h3>Package the export</h3><p>Export a C byte array for subsequent device integration and testing.</p></div></li>
+            </ol>
+            <figcaption>Original method explanation of the reviewed workflow. Example-level results do not establish performance on independent users or devices. Target-hardware latency, memory and clinical performance require separate tests. <a class="text-link" href="assets/compact-audio-classifier-method.svg">Open the larger workflow schematic (SVG)</a>.</figcaption>
+          </figure>
+          <div class="tag-list"><span class="tag">TensorFlow / Keras</span><span class="tag">FFT features</span><span class="tag">TensorFlow Lite</span><span class="tag">C export</span></div>
+        </div>
+      </article>
+
+      <article id="haptics" class="project">
+        <div class="project-meta"><span class="project-number">04</span><span>Audio-driven motion</span><span class="badge">Offline prototype</span><span class="meta-extra">Saved documentation: September 2025</span></div>
+        <div class="project-content">
+          <h3>Turning game audio into a motion timeline</h3>
+          <p>I built a modular, file-based workflow that extracts spectral and onset features, applies event rules and configurable motion mappings, then smooths and bounds the resulting signals before exporting a motion/vibration timeline.</p>
+          <dl class="facts">
+            <div><dt>Task &amp; my role</dt><dd>Develop the offline processing modules, configuration presets and CSV-output workflow.</dd></div>
+            <div><dt>Method</dt><dd>Audio features and event rules → motion mapping → smoothing and configured bounds.</dd></div>
+            <div><dt>Output &amp; evaluation</dt><dd>Python modules, presets and CSV timelines, with saved synthetic-example and output-schema checks.</dd></div>
+          </dl>
+          <figure>
+            <ol class="steps method-outline" aria-label="Offline audio-to-haptics workflow">
+              <li><div><h3>Load stereo audio</h3><p>Prepare a recording file for analysis.</p></div></li>
+              <li><div><h3>Extract spectral and onset features</h3><p>Measure energy, frequency-band cues and stereo balance.</p></div></li>
+              <li><div><h3>Apply event rules</h3><p>Identify transient and low-band cues for the configured mappings.</p></div></li>
+              <li><div><h3>Map events to motion parameters</h3><p>Generate pitch, roll, heave and vibration values using adjustable rules.</p></div></li>
+              <li><div><h3>Condition the signals</h3><p>Smooth the outputs and apply configured limits.</p></div></li>
+              <li><div><h3>Export a CSV timeline</h3><p>Write values on a 2 ms output grid for a subsequent integration step.</p></div></li>
+            </ol>
+            <figcaption>Original method explanation. The 2 ms spacing describes the output grid; it does not establish live processing at 500 Hz. Hardware integration and physical safety remain separate validation tasks. <a class="text-link" href="assets/offline-audio-haptics-method.svg">Open the larger workflow schematic (SVG)</a>.</figcaption>
+          </figure>
+          <div class="tag-list"><span class="tag">Python</span><span class="tag">librosa</span><span class="tag">YAML configuration</span><span class="tag">CSV tooling</span></div>
+        </div>
+      </article>
+
+      <article id="matlab-denoising" class="project">
+        <div class="project-meta"><span class="project-number">05</span><span>Audio DSP</span><span class="badge">MATLAB / Simulink prototype</span></div>
+        <div class="project-content">
+          <h3>Classical denoising with an inspectable signal path</h3>
+          <p>I developed a MATLAB/Simulink workflow to compare spectral subtraction and Wiener filtering through inspectable processing steps and before/after signal views.</p>
+          <dl class="facts">
+            <div><dt>Task &amp; my role</dt><dd>Implement the classical filtering workflow and prepare signal comparisons for algorithm development.</dd></div>
+            <div><dt>Method &amp; setup</dt><dd>Spectral subtraction and Wiener filtering. The saved Wiener demonstration uses a clean reference to initialise its noise estimate.</dd></div>
+            <div><dt>Output &amp; evaluation</dt><dd>A MATLAB/Simulink model and saved signal outputs; no general intelligibility benchmark is established.</dd></div>
+          </dl>
+          <p>Applying the method to other recordings requires an appropriate noise estimate and a separate evaluation.</p>
+          <div class="tag-list"><span class="tag">MATLAB</span><span class="tag">Simulink</span><span class="tag">Spectral subtraction</span><span class="tag">Wiener filtering</span></div>
+        </div>
+      </article>
+    </section>
+
+    <section id="capabilities" class="section shell" aria-labelledby="capabilities-title">
+      <div class="section-top"><div><p class="section-label">Capabilities</p><h2 id="capabilities-title">Signal analysis,<br><em>made usable.</em></h2></div></div>
+      <div class="details-grid">
+        <article><h3>Audio &amp; acoustic analysis</h3><p>Time-frequency analysis, filtering, event investigation and comparison reports. See the <a class="text-link" href="#restoration">recording investigation</a> and <a class="text-link" href="#comparison-demo">synthetic comparison output</a>.</p></article>
+        <article><h3>Applied machine learning</h3><p>Feature preparation, offline evaluation and export workflows. The <a class="text-link" href="#compact-classifier">compact-classifier case</a> shows the scope and the separate device-testing step.</p></article>
+        <article><h3>Research software</h3><p>Batch-processing tools, configurable pipelines and MATLAB/Simulink prototypes. See <a class="text-link" href="#haptics">audio-to-motion processing</a> and the <a class="text-link" href="#matlab-denoising">classical DSP workflow</a>.</p></article>
+      </div>
+    </section>
+    <section id="process" class="section shell" aria-labelledby="process-title">
+      <div class="split"><div><p class="eyebrow">Project approach</p><h2 id="process-title">A clear question.<br><em>A useful result.</em></h2><p class="section-intro">I scope the analysis around the decision or workflow the recording needs to support.</p></div>
+        <ol class="steps">
+          <li><div><h3>Understand the recording and goal</h3><p>Define the input format, acquisition conditions, required outputs and criteria for a useful result.</p></div></li>
+          <li><div><h3>Build an inspectable baseline</h3><p>Start with signal diagnostics and a reproducible workflow; add models where they help answer the question.</p></div></li>
+          <li><div><h3>Deliver the workflow and its limits</h3><p>Agree the plots, data format and assumptions to report. Check reproducibility and output schemas against the task, then document limitations and next tests.</p></div></li>
+        </ol>
+      </div>
+    </section>
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <div class="shell">
+        <div><h2 id="contact-title">Have a recording<br>or a signal problem?</h2><p>Start with the goal, recording format and approximate duration or volume, acquisition conditions, expected outputs and any target environment or deadline.</p><p>Describe the task first so we can agree scope and a suitable way to handle any recordings.</p><p><a class="contact-email" href="mailto:ahmadzafar577@gmail.com">ahmadzafar577@gmail.com</a></p></div>
+        <div class="hero-actions"><a class="button" href="mailto:ahmadzafar577@gmail.com?subject=Audio%20or%20signal-processing%20project&amp;body=Goal%3A%20%0AInput%20format%20and%20approximate%20volume%3A%20%0AAcquisition%20conditions%3A%20%0AOutputs%20required%3A%20%0ATarget%20environment%20or%20deadline%3A%20">Discuss a project</a><a class="button secondary" href="startup.html#work">PhonoAxis services</a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer shell"><span>© 2026 Zafar Ahmad</span><div class="footer-links"><a href="https://github.com/ZAFAR-AHMAD-5359">GitHub</a><a href="https://scholar.google.com/citations?user=D5W9TVwAAAAJ&amp;hl=en">Google Scholar</a><a href="https://www.linkedin.com/in/zafar-ahmad-ab87b6183/">LinkedIn</a></div></footer>
+</body>
+</html>
 

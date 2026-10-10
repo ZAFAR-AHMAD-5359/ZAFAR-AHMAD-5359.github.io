@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="580" viewBox="0 0 960 580" role="img" aria-labelledby="title desc">
+<title id="title">Synthetic recording comparison: level and tone-power share</title>
+<desc id="desc">Four generated two-second mono conditions, with digital RMS level and the percentage of mean-square power in the exact 100 Hz DFT bin. A halved amplitude changes level but preserves the tone-power fraction.</desc>
+<rect width="960" height="580" fill="#f5f5f2"/>
+<g font-family="Arial,Helvetica,sans-serif" fill="#192321">
+<text x="50" y="50" font-size="27" font-weight="700">A controlled recording-comparison example</text>
+<text x="50" y="84" font-size="19" fill="#526059">Synthetic mono tones · 8,000 samples/s · 2 seconds · no client recordings</text>
+<text x="50" y="135" font-size="19" font-weight="700">Digital RMS level (dBFS)</text>
+<text x="545" y="135" font-size="19" font-weight="700">100 Hz power / total power</text>
+<path d="M180.00 154V430" stroke="#d6dcd7"/>
+<text x="180.00" y="455" text-anchor="middle" font-size="17">-30</text>
+<path d="M270.00 154V430" stroke="#d6dcd7"/>
+<text x="270.00" y="455" text-anchor="middle" font-size="17">-20</text>
+<path d="M360.00 154V430" stroke="#d6dcd7"/>
+<text x="360.00" y="455" text-anchor="middle" font-size="17">-10</text>
+<path d="M450.00 154V430" stroke="#d6dcd7"/>
+<text x="450.00" y="455" text-anchor="middle" font-size="17">0</text>
+<path d="M545.00 154V430" stroke="#d6dcd7"/>
+<text x="545.00" y="455" text-anchor="middle" font-size="17">0%</text>
+<path d="M695.00 154V430" stroke="#d6dcd7"/>
+<text x="695.00" y="455" text-anchor="middle" font-size="17">50%</text>
+<path d="M845.00 154V430" stroke="#d6dcd7"/>
+<text x="845.00" y="455" text-anchor="middle" font-size="17">100%</text>
+<text x="50" y="190" font-size="18" font-weight="700">A</text>
+<text x="50" y="212" font-size="16">Baseline</text>
+<rect x="180" y="178" width="125.81" height="28" fill="#244ec3"/>
+<text x="313.81" y="198" font-size="17">-16.02</text>
+<rect x="545" y="178" width="240.00" height="28" fill="#704260"/>
+<text x="793.00" y="198" font-size="17">80.00%</text>
+<text x="50" y="254" font-size="18" font-weight="700">B</text>
+<text x="50" y="276" font-size="16">More 100 Hz</text>
+<rect x="180" y="242" width="173.65" height="28" fill="#244ec3"/>
+<text x="361.65" y="262" font-size="17">-10.71</text>
+<rect x="545" y="242" width="282.35" height="28" fill="#704260"/>
+<text x="835.35" y="262" font-size="17">94.12%</text>
+<text x="50" y="318" font-size="18" font-weight="700">C</text>
+<text x="50" y="340" font-size="16">Half amplitude</text>
+<rect x="180" y="306" width="71.63" height="28" fill="#244ec3"/>
+<text x="259.63" y="326" font-size="17">-22.04</text>
+<rect x="545" y="306" width="240.00" height="28" fill="#704260"/>
+<text x="793.00" y="326" font-size="17">80.00%</text>
+<text x="50" y="382" font-size="18" font-weight="700">D</text>
+<text x="50" y="404" font-size="16">Added 3000 Hz</text>
+<rect x="180" y="370" width="127.72" height="28" fill="#244ec3"/>
+<text x="315.72" y="390" font-size="17">-15.81</text>
+<rect x="545" y="370" width="228.57" height="28" fill="#704260"/>
+<text x="781.57" y="390" font-size="17">76.19%</text>
+<text x="50" y="500" font-size="19">C is 6.02 dB below A, with the same 100 Hz power fraction.</text>
+<text x="50" y="534" font-size="17" fill="#526059">Defined digital levels; not sound-pressure levels, loudness or hardware-performance measurements.</text>
+</g></svg>

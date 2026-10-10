@@ -21,3 +21,54 @@
 .venture-card-name img{flex:0 0 auto}
 .startup-page .engine-brand{font-size:18px;letter-spacing:-.04em}
 @media(max-width:540px){.venture-identity{gap:13px;margin-bottom:25px}.venture-mark{width:52px;height:52px}.venture-name{font-size:1.8rem}.startup-page .engine-brand{font-size:14px}}
+
+/* Approved panel improvements: readable evidence and progressive navigation. */
+.contact a:focus-visible,.contact button:focus-visible,.system-figure button:focus-visible,.signal-lab button:focus-visible{outline-color:#f5f5f2}
+.contact .contact-email{display:inline-block;color:#f5f5f2;overflow-wrap:anywhere;text-decoration:underline;text-underline-offset:5px;margin-top:16px}
+.hero-photo figcaption a{color:#f5f5f2;text-decoration:underline;text-underline-offset:3px}
+.hero-photo .historical-caption{margin-top:10px;font-size:.85rem;line-height:1.5;color:#d7dfdb}
+.split>*,.details-grid>*,.status-grid>*,.facts>*,.proof-strip>*,.publication>*,.timeline-item>*,.portfolio-grid>*,.section-top>*,.project>*{min-width:0}
+.proof-strip>div{flex-wrap:wrap}.button{max-width:100%;overflow-wrap:anywhere;text-align:center}
+.section-nav a,.inline-links a,.case-index a,.research-index a{overflow-wrap:anywhere}
+.case-index,.research-index{display:flex;flex-wrap:wrap;gap:10px 24px;margin:22px 0 28px;padding:18px 0;border-block:1px solid var(--line);font-size:1rem}
+.case-index a,.research-index a{text-decoration:underline;text-underline-offset:4px}
+.evaluation-flow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;padding:0;list-style:none;counter-reset:evaluation}
+.evaluation-step{padding:18px;border:1px solid var(--line);background:#fff;min-width:0;font-size:1rem;line-height:1.5;counter-increment:evaluation}
+.evaluation-step:before{content:'0' counter(evaluation);display:block;color:var(--accent);font:400 1.6rem var(--serif);margin-bottom:10px}
+.evaluation-step strong{display:block;margin-bottom:8px;font-weight:500}.evaluation-step p{color:var(--muted);font-size:1rem;line-height:1.5}
+.evaluation-comparators{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:15px 0}
+.evaluation-comparator{border-top:2px solid var(--accent);padding-top:15px;font-size:1rem;min-width:0}.evaluation-comparator p{color:var(--muted);margin-top:8px}
+.research-question{border-left:3px solid var(--accent);padding:16px 20px;margin:20px 0;background:#fff}
+.demo-block{border:1px solid var(--line);border-top:3px solid var(--accent);padding:26px;margin:28px 0;background:#fff}
+.demo-block p{color:var(--muted);margin-top:14px}.demo-block h4{font-size:1.15rem;font-weight:500;margin:14px 0}
+.demo-metrics{width:100%;border-collapse:collapse;font-size:1rem;margin:20px 0}.demo-metrics caption{text-align:left;font-size:1rem;padding-bottom:12px;color:var(--muted)}
+.demo-metrics th,.demo-metrics td{padding:12px 14px 12px 0;text-align:left;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}.demo-metrics th{color:var(--accent);font-weight:500}
+.demo-figure{margin:20px 0}.demo-figure img{width:100%;height:auto}.demo-figure figcaption{font-size:.94rem}
+.project-content .steps{margin:22px 0}.project-content .steps li{grid-template-columns:44px minmax(0,1fr);gap:14px}.project-content .steps p{font-size:1rem;line-height:1.5}
+.method-outline{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px}.method-outline li{min-width:0}
+.table-wrap[tabindex]:focus-visible{outline:3px solid var(--accent);outline-offset:4px}.demo-metrics{min-width:430px}.table-scroll-hint{display:none}
+.roadmap-lanes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px;margin-top:28px}.roadmap-lanes h3{font-size:1.25rem}.roadmap-lanes .steps{margin-top:18px}.roadmap-lanes .steps li{grid-template-columns:40px minmax(0,1fr);gap:15px}
+.service-proof{margin-top:28px;border-top:1px solid var(--line);padding-top:22px}.service-proof p{color:var(--muted);max-width:760px}
+.signal-lab{--phase-columns:16fr 32fr 10fr 42fr}
+.phase-shades,.phase-labels{display:grid;grid-template-columns:var(--phase-columns);gap:0}
+.phase-shades>span{width:auto}.phase-labels{justify-content:normal;text-align:center}.phase-labels span{min-width:0;line-height:1.45}
+.mobile-trace-labels{display:none}
+@media(min-width:761px){.facts{grid-template-columns:repeat(3,minmax(0,1fr))}.project{grid-template-columns:minmax(0,.38fr) minmax(0,1fr)}}
+@media(max-width:1000px){.evaluation-flow{grid-template-columns:repeat(2,minmax(0,1fr))}.facts{grid-template-columns:1fr}}
+@media(max-width:760px){
+ .site-header nav{display:flex;position:static;flex-basis:100%;box-shadow:none;padding:14px 0;border:0;border-top:1px solid var(--line)}
+ .menu-toggle{display:none}.nav-ready .menu-toggle{display:block}
+ .nav-ready .site-header nav{display:none;position:absolute;top:100%;padding:18px 22px;border:1px solid var(--line);box-shadow:0 15px 20px #19232110}
+ .nav-ready .site-header nav.open{display:flex}
+ .project-meta .meta-extra{display:block;flex-basis:100%;font-size:.94rem;line-height:1.6}
+ .hero-photo img{object-position:75% center}
+ .evaluation-flow,.evaluation-comparators,.roadmap-lanes,.method-outline{grid-template-columns:1fr}.evaluation-flow{gap:12px}.roadmap-lanes{gap:30px}.table-scroll-hint{display:block;font-size:.875rem}
+ .signal-chart{position:relative}.signal-row-labels{display:none}.trace-area{font-size:.875rem}.trace-area svg{height:18.57143em;margin-top:2.28572em}
+ .phase-shades{inset:2.28572em 0 auto;height:18.57143em}
+ .phase-labels{row-gap:.35em}.phase-labels span{white-space:nowrap;justify-self:center}
+ .phase-labels span:nth-child(1){grid-column:1;grid-row:1}.phase-labels span:nth-child(2){grid-column:2;grid-row:2}
+ .phase-labels span:nth-child(3){grid-column:3;grid-row:1}.phase-labels span:nth-child(4){grid-column:4;grid-row:2}
+ .mobile-trace-labels{display:block;position:absolute;inset:0;z-index:2;pointer-events:none;font-size:.875rem;line-height:1.4}
+ .mobile-trace-labels span{position:absolute;left:0;top:0}.mobile-trace-labels .timing-label{top:9.57143em}
+ .demo-block{padding:20px 16px}.demo-metrics{font-size:.94rem}.phase-labels{font-size:.8125rem}
+}

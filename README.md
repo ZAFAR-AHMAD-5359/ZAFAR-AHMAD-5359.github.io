@@ -2,7 +2,13 @@
 
 Static website with dedicated cardiovascular research and audio/acoustic engineering portfolios and a PhonoAxis venture page. Updated 10 October 2026. Intended owner: ZAFAR-AHMAD-5359.
 
-This public package includes reviewed website files, the adapted academic CV, the supplied ESC presentation photograph, two original method schematics and the selected PhonoAxis symbol/favicon. Private application records, client recordings, private project code and thesis/manuscript drafts are excluded.
+This public package includes reviewed website files, the adapted academic CV, the supplied ESC presentation photograph, two original method schematics, the selected PhonoAxis symbol/favicon and an original synthetic recording-comparison example with reproducible source and output. Sharing metadata, a social-preview image, robots.txt and a four-page sitemap are included. Private application records, client recordings, private project code and thesis/manuscript drafts are excluded.
+
+## Synthetic engineering example
+
+The original public example uses generated coherent tones, not client recordings. Python 3.9+ and its standard library reproduce its CSV, SVG plot and text report. Download assets/recording-comparison-demo.py into a working folder and run python recording-comparison-demo.py. The report defines normalised digital amplitude, RMS level and spectral power share; it makes no calibrated sound-pressure, loudness or hardware-performance claim.
+
+The inline method outlines and research evaluation schematic are selectable HTML text that reflows on phones. Larger standalone SVG method files are also available.
 
 ## Preview
 

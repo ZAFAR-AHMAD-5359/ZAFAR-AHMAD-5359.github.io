@@ -1,0 +1,48 @@
+ZAFAR AHMAD — SYNTHETIC RECORDING-COMPARISON DEMONSTRATION
+Independently authored portfolio example; created 10 October 2026.
+This example uses no client recordings, report content, software or model weights.
+
+INPUT AND CONTROLS
+Each input is a two-second mono floating-point signal at 8,000 samples/s (16,000 samples).
+x[n] = sum(a_f * sin(2*pi*f*n/8000)) for f in {100, 1000, 3000} Hz.
+All tones start at zero phase. Sample rate, duration and tone frequencies are fixed.
+There is no randomness, normalisation, filtering, resampling, clipping or added noise.
+All frequencies complete an integer number of cycles over the record.
+
+METRIC DEFINITIONS
+RMS = sqrt(sum(x[n]^2)/N), in normalised digital-amplitude units.
+Level (dBFS) = 20*log10(RMS), with digital amplitude 1 as the reference.
+Under this convention a full-amplitude sine has -3.0103 dBFS RMS level.
+100 Hz bin power = 2*((sum(x[n]*sin(2*pi*100*n/fs))/N)^2
+                      +(sum(x[n]*cos(2*pi*100*n/fs))/N)^2).
+100 Hz power fraction (%) = 100*100 Hz bin power/(sum(x[n]^2)/N).
+The coherent rectangular-record projection needs no window correction in this example.
+This is one exact frequency-bin fraction, not a general low-frequency band metric.
+
+COMPUTED RESULTS
+ID | Tone amplitudes at 100/1000/3000 Hz | RMS | dBFS | 100 Hz power fraction
+A | 0.20/0.10/0.00 | 0.158114 | -16.02 | 80.00%
+B | 0.40/0.10/0.00 | 0.291548 | -10.71 | 94.12%
+C | 0.10/0.05/0.00 | 0.079057 | -22.04 | 80.00%
+D | 0.20/0.10/0.05 | 0.162019 | -15.81 | 76.19%
+
+READING THE COMPARISON
+A is the baseline. B doubles only the 100 Hz component. C halves both baseline components.
+D adds a 3000 Hz component. The table separates digital level from relative spectral composition.
+C is 6.02 dB below A; both have 80.00% of their power in the 100 Hz bin.
+Known generation conditions explain these differences; they do not establish a hardware effect.
+
+REPRODUCE
+Use Python 3.9 or later; no third-party dependencies are required.
+python recording-comparison-demo.py --output-dir demo-output
+The command generates recording-comparison-demo.csv, recording-comparison-demo.svg,
+and recording-comparison-demo.txt. Displayed results are rounded; calculations use floats.
+
+LIMITS
+This teaching/report example does not recreate the private 156-condition accessory study.
+It does not measure loudness, calibrated sound pressure, intelligibility, SNR or hardware quality.
+Real recordings require acquisition controls, appropriate frequency analysis and uncertainty checks.
+The coherent-bin assumptions here do not transfer automatically to arbitrary recordings.
+
+Portfolio: https://zafar-ahmad-5359.github.io/audio.html#acoustic-comparison
+Contact: ahmadzafar577@gmail.com

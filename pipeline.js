@@ -16,10 +16,14 @@ document.getElementById('ecg-trace').setAttribute('d', waveform(t =>
 ));
 
 const lab = document.querySelector('.signal-lab');
+const chart = lab.querySelector('.signal-chart');
 const modeButtons = [...document.querySelectorAll('[data-mode]')];
 modeButtons.forEach(button => button.addEventListener('click', () => {
   const isSound = button.dataset.mode === 'sound';
   lab.classList.toggle('sound-mode', isSound);
+  chart.setAttribute('aria-label', isSound
+    ? 'Illustrative heart-sound trace (PCG), without a timing reference or phase divisions. The phase of each event is not explicit. Not patient data or model performance.'
+    : 'Illustrative heart-sound trace (PCG) and synthetic ECG timing reference. Shared bands identify first sound (S1), systolic interval, second sound (S2), and diastolic interval. Not patient data or model performance.');
   modeButtons.forEach(other => other.setAttribute('aria-pressed', String(other === button)));
   document.getElementById('signal-explanation').textContent = isSound
     ? 'A sound recording contains rich acoustic detail. On its own, the phase of each event is not explicit.'
@@ -56,9 +60,9 @@ if (motionPreference && motionPreference.addEventListener) motionPreference.addE
 setMotion();
 const stageExplanations = [
   'The acoustic signal combines heart sounds, possible murmur patterns, and background noise. Their timing carries information.',
-  'One acoustic sensor captures a PCG recording. The proposed analysis does not require a simultaneous ECG sensor.',
-  'The research generates a synthetic ECG timing reference, estimates cardiac phases, and extracts features within those phases.',
-  'The research studies murmur presence, grade, timing, and shape. These outputs are building blocks for future decision support, not a confirmed diagnosis.'
+  'A phonocardiogram (PCG) records heart sounds. The proposed acoustic-only inference path would use this recording without a simultaneous ECG sensor; evaluation can still use paired ECG data.',
+  'The proposed path reconstructs an ECG-like timing reference and tests phase-based features. The tested synthetic timing route has not established added downstream value over equal-time windows.',
+  'The research studies murmur presence, intensity grade, timing, and shape. Grade describes murmur intensity, not disease severity. These are characterisation targets, not a confirmed diagnosis.'
 ];
 const exploreButtons = [...document.querySelectorAll('[data-explore]')];
 function selectStage(index) {

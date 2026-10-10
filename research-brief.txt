@@ -1,28 +1,36 @@
-﻿ZAFAR AHMAD - CARDIOVASCULAR RESEARCH BRIEF
-Updated 9 October 2026
+ZAFAR AHMAD — CARDIOVASCULAR RESEARCH BRIEF
+Prepared 10 October 2026. Manuscript statuses last checked 9 October 2026.
+Portfolio: https://zafar-ahmad-5359.github.io/research.html
+Academic CV: https://zafar-ahmad-5359.github.io/downloads/Zafar-Ahmad-Academic-CV.pdf
 
-I am an electrical engineer and cardiovascular signal-processing researcher with an MS from NUST, conferred on 18 May 2026. My research connects ECG, phonocardiogram (PCG) and photoplethysmogram (PPG) signals with cardiac electromechanical coupling, wearable sensing and future patient-specific physiological modelling.
+I am an electrical engineer and cardiovascular signal-processing researcher with an MS from the National University of Sciences and Technology (NUST), conferred on 18 May 2026. I study electrocardiogram (ECG), phonocardiogram or heart-sound (PCG), and photoplethysmogram or optical-pulse (PPG) signals, connecting clinical data collection, machine learning and wearable prototyping.
 
 MS thesis: Cross-Modal Reconstruction of Cardiac Signals: Decoding ECG-PCG Electromechanical Coupling Dynamics. Supervisors: Nazia Perwaiz and Muhammad Salman Khan.
 
-The programme investigates PCG-to-ECG timing reconstruction and phase-aware murmur characterisation. Automatically reconstructed timing remains a research question; it is not a replacement for measured diagnostic ECG. Current evaluation prioritises patient-grouped comparisons and recording-device transfer. Older results from different split protocols should not be treated as directly comparable.
+Question: Can timing inferred from heart sounds support murmur characterisation for unseen patients?
+My contribution: Developed reconstruction and phase-analysis workflows, designed experiments and patient-grouped evaluation, led the first-author manuscripts and a blind reconstruction audit across recording devices. The audit covered 338 record pairs; it tested transfer, rather than demonstrating clinical generalisation.
+Current lesson: The October 2026 patient-grouped dataset evaluation found useful information in expert-reviewed cardiac-phase boundaries. The tested synthetic-ECG timing route did not establish an advantage over equal-time windows. This separates the value of accurate phase information from the unestablished benefit of automatically reconstructed timing.
+Method: Keep each patient's recordings within one evaluation group, fit preprocessing on training folds only, compare methods on matched patient folds and report paired uncertainty. Paired ECG-PCG reconstruction data, separate-device reconstruction checks and paediatric downstream murmur evaluation have different roles.
+Next question: Can reliable automatic timing preserve that phase information across patients and recording systems? An inferred timing reference is not a replacement for measured diagnostic ECG. Earlier thesis and congress findings used different protocols and are historical results.
 
 Published first-author conference papers:
-- ICAI 2023: Automatic Detection of Paediatric Congenital Heart Diseases from Phonocardiogram Signals. DOI: 10.1109/ICAI58407.2023.10136668.
-- EUSIPCO 2024: Phonocardiogram Classification Based on 1D CNN with Pitch-Shifting and Signal Uniformity Techniques. DOI: 10.23919/EUSIPCO63174.2024.10715037.
+- ICAI 2023: Automatic Detection of Paediatric Congenital Heart Diseases from Phonocardiogram Signals. Contribution: time-frequency front-ends and convolutional models for paediatric binary CHD detection. DOI: 10.1109/ICAI58407.2023.10136668.
+- EUSIPCO 2024: Phonocardiogram Classification Based on 1D CNN with Pitch-Shifting and Signal Uniformity Techniques. Contribution: band-selective pitch augmentation and an MFCC-based 1D-CNN for a separate five-class valvular/normal heart-sound benchmark. DOI: 10.23919/EUSIPCO63174.2024.10715037.
+Public proceedings PDF: https://eurasip.org/Proceedings/Eusipco/Eusipco2024/pdfs/0001536.pdf
 
 First-author journal manuscripts:
 - PCG-to-ECG Signal Reconstruction Using Conditional GAN with Multi-Scale Attention. IEEE Journal of Biomedical and Health Informatics: minor revision.
-- Synthetic-ECG-gated phonocardiography for paediatric heart-murmur characterisation: a cross-modal deep-learning method. European Heart Journal - Digital Health: major revision.
-Neither manuscript is accepted or published. My current CV additionally lists a second-author JSTSP manuscript under review.
+- Synthetic-ECG-gated phonocardiography for paediatric heart-murmur characterisation: a cross-modal deep-learning method. European Heart Journal — Digital Health: major revision.
+Both remain under review; neither is accepted or published. My source CV additionally lists a second-author IEEE Journal of Selected Topics in Signal Processing submission under review; its submission/status is reported from that CV rather than an independently inspected submission record.
 
-I presented two research abstracts at ESC Congress 2026 in Munich on 28 and 31 August:
-https://esc365.escardio.org/presentation/326239
-https://esc365.escardio.org/presentation/326198
+ESC Congress 2026, Munich:
+- 28 August: first author and presenter of the murmur-gating abstract. Its historical title does not state the current automatic-timing conclusion: https://esc365.escardio.org/presentation/326239
+- 31 August: co-author and presenter of the concept-bottleneck ECG abstract. My role: technical supervision and congress presentation: https://esc365.escardio.org/presentation/326198
 
-Current roles: CAREON Research Assistant and Team Supervisor at NUST; remote Research Assistant in cardiac modelling with Qatar University. CAREON's wearable system is a research prototype.
+Current roles: CAREON Research Assistant and Team Supervisor at NUST, supervising three apprentices on wearable research; remote Research Assistant in cardiac signal modelling with Qatar University. CAREON’s wearable platform remains a research prototype. Clinical acquisition experience includes hospital/school recording, collection procedures, consent documents, clinical questionnaires and cardiologist-supported echocardiography-confirmed annotation.
+
+Doctoral direction: I bring cardiac acquisition, signal-model development and patient-grouped evaluation experience. I seek training in physiological modelling and prospective validation, asking whether signal-derived cardiac timing can constrain patient-specific physiological models and how measurement uncertainty affects identifiability.
 
 Contact: ahmadzafar577@gmail.com
-GitHub: https://github.com/ZAFAR-AHMAD-5359
+GitHub profile: https://github.com/ZAFAR-AHMAD-5359
 Scholar: https://scholar.google.com/citations?user=D5W9TVwAAAAJ&hl=en
-

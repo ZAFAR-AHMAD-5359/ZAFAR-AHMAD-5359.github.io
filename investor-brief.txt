@@ -1,24 +1,31 @@
-﻿PHONOAXIS - BIOSIGNAL & ACOUSTIC ENGINEERING
-Updated 10 October 2026
+PHONOAXIS — VENTURE OVERVIEW
+Biosignal & Acoustic Engineering
+Updated 10 October 2026 | Founder: Zafar Ahmad
+https://zafar-ahmad-5359.github.io/startup.html
 
-PhonoAxis is Zafar Ahmad's venture in development. The provisional direction combines practical signal-processing services with cardiovascular research.
+PhonoAxis connects practical audio and signal-processing project work with a parallel cardiovascular research direction. It is a venture in development.
 
-Engineering foundation:
-Audio restoration and diagnostics, acoustic comparisons, Python/MATLAB analysis workflows, compact audio classifiers and offline signal-driven prototypes.
+ENGINEERING TASKS
+- Recording analysis and repeated comparisons: processing outputs, diagnostic plots and a report with defined metrics and interpretation limits.
+- Python/MATLAB workflows: batch analysis, feature extraction, event rules and documented outputs.
+- Compact-model prototypes: feature preparation, recorded-example evaluation and export preparation within an agreed scope; target-device testing is separate.
 
-Cardiac research foundation:
-An MS thesis, two published first-author conference papers, two ESC Congress 2026 presentations and two first-author journal manuscripts under revision. No journal acceptance is implied.
+FOUNDER ENGINEERING EXPERIENCE
+The portfolio documents investigation of four difficult recordings, repeated acoustic reporting including a 156-configuration report, compact-model export and an offline audio-to-motion prototype. These are founder project scopes, not company traction figures.
+https://zafar-ahmad-5359.github.io/audio.html
+A separately authored synthetic recording-comparison example includes its source, exact metric definitions and computed output. It is a public demonstration, not a client result.
+https://zafar-ahmad-5359.github.io/audio.html#comparison-demo
 
-Research question:
-Can acoustic recordings provide reliable timing information for phase-aware murmur analysis? The value of automatically inferred timing for unseen patients remains under evaluation. The website's conceptual traces are illustrations, not model inference.
+CARDIAC RESEARCH
+The research investigates an acoustic timing reference for phase-aware murmur characterisation. In the October patient-grouped dataset evaluation, expert-reviewed phase boundaries provided useful information; the tested synthetic-ECG timing route did not establish a downstream advantage over equal-time windows. Reliable automatic timing and clinical transfer remain open research questions.
+The two first-author journal manuscripts remain under revision: IEEE JBHI minor revision; EHJ Digital Health major revision (status evidence updated 9 October 2026). No accepted-publication or clinical-readiness claim is made.
+https://zafar-ahmad-5359.github.io/research.html
 
-Next steps:
-Focused engineering delivery, matched patient-grouped comparisons, transfer across recording systems and research-supported product definition.
+PROPOSED NEXT STEPS
+Agree focused engineering inputs, outputs and acceptance criteria; deliver an inspectable workflow and document its limits. In parallel, evaluate automatic timing, cross-device/cohort transfer and the requirements of a supported research application. The service-versus-research weighting remains open to refinement.
 
-No incorporation, awarded venture funding, patents, commercial cardiac deployments or clinical approval are claimed. Clinical use requires further evidence.
+START A CONVERSATION
+Email the goal, input format/approximate volume, required output, and any platform or deadline constraint. Begin with a description; samples can be agreed during scoping.
+ahmadzafar577@gmail.com
 
-Founder: Zafar Ahmad
-Contact: ahmadzafar577@gmail.com
-
-The selected venture name is PhonoAxis. The business focus and domain remain to be refined. Preliminary naming research is not trademark or domain clearance.
-
+This is a venture overview, not a funding offer or a finished cardiac-device specification. Academic and client work remain distinct from company ownership and institutional partnership.

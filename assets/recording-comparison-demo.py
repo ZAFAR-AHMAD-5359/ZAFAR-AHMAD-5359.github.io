@@ -52,7 +52,7 @@ def make_svg(results):
         '<title id="title">Synthetic recording comparison: level and tone-power share</title>',
         '<desc id="desc">Four generated two-second mono conditions, with digital RMS level '
         'and the percentage of mean-square power in the exact 100 Hz DFT bin. '
-        'A halved amplitude changes level but preserves the tone-power fraction.</desc>',
+        'A halved amplitude changes level but preserves the 100 Hz power share.</desc>',
         '<rect width="960" height="580" fill="#f5f5f2"/>',
         '<g font-family="Arial,Helvetica,sans-serif" fill="#192321">',
         '<text x="50" y="50" font-size="27" font-weight="700">A controlled recording-comparison example</text>',
@@ -81,7 +81,7 @@ def make_svg(results):
             f'<text x="{545 + share_width + 8:.2f}" y="{y + 20}" font-size="17">{item["share"]:.2f}%</text>',
         ))
     pieces.extend((
-        '<text x="50" y="500" font-size="19">C is 6.02 dB below A, with the same 100 Hz power fraction.</text>',
+        '<text x="50" y="500" font-size="19">C is 6.02 dB below A, with the same 100 Hz power share.</text>',
         '<text x="50" y="534" font-size="17" fill="#526059">Defined digital levels; not sound-pressure levels, loudness or hardware-performance measurements.</text>',
         '</g></svg>\n',
     ))
@@ -96,7 +96,7 @@ def make_report(results):
         "",
         "INPUT AND CONTROLS",
         "Each input is a two-second mono floating-point signal at 8,000 samples/s (16,000 samples).",
-        "x[n] = sum(a_f * sin(2*pi*f*n/8000)) for f in {100, 1000, 3000} Hz.",
+        "x[n] = sum(a_f * sin(2*pi*f*n/fs)) for f in {100, 1000, 3000} Hz, with fs = 8000 samples/s and n = 0..N-1 (N = 16,000).",
         "All tones start at zero phase. Sample rate, duration and tone frequencies are fixed.",
         "There is no randomness, normalisation, filtering, resampling, clipping or added noise.",
         "All frequencies complete an integer number of cycles over the record.",
@@ -107,12 +107,12 @@ def make_report(results):
         "Under this convention a full-amplitude sine has -3.0103 dBFS RMS level.",
         "100 Hz bin power = 2*((sum(x[n]*sin(2*pi*100*n/fs))/N)^2",
         "                      +(sum(x[n]*cos(2*pi*100*n/fs))/N)^2).",
-        "100 Hz power fraction (%) = 100*100 Hz bin power/(sum(x[n]^2)/N).",
+        "100 Hz power share (%) = 100*(100 Hz bin power)/(sum(x[n]^2)/N).",
         "The coherent rectangular-record projection needs no window correction in this example.",
         "This is one exact frequency-bin fraction, not a general low-frequency band metric.",
         "",
         "COMPUTED RESULTS",
-        "ID | Tone amplitudes at 100/1000/3000 Hz | RMS | dBFS | 100 Hz power fraction",
+        "ID | Tone amplitudes at 100/1000/3000 Hz | RMS | dBFS | 100 Hz power share",
     ]
     for item in results:
         amps = "/".join(f"{amp:.2f}" for amp in item["amplitudes"])
@@ -134,12 +134,12 @@ def make_report(results):
         "and recording-comparison-demo.txt. Displayed results are rounded; calculations use floats.",
         "",
         "LIMITS",
-        "This teaching/report example does not recreate the private 156-condition accessory study.",
+        "This report example does not recreate the private 156-combination accessory study.",
         "It does not measure loudness, calibrated sound pressure, intelligibility, SNR or hardware quality.",
         "Real recordings require acquisition controls, appropriate frequency analysis and uncertainty checks.",
         "The coherent-bin assumptions here do not transfer automatically to arbitrary recordings.",
         "",
-        "Portfolio: https://zafar-ahmad-5359.github.io/audio.html#acoustic-comparison",
+        "Portfolio: https://zafar-ahmad-5359.github.io/audio.html#comparison-demo",
         "Contact: ahmadzafar577@gmail.com",
     ))
     return "\n".join(lines) + "\n"

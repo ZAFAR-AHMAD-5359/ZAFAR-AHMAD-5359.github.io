@@ -1,6 +1,6 @@
 PHONOAXIS — VENTURE OVERVIEW
 Biosignal & Acoustic Engineering
-Updated 10 October 2026 | Founder: Zafar Ahmad
+Updated 11 October 2026 | Founder: Zafar Ahmad
 https://zafar-ahmad-5359.github.io/startup.html
 
 PhonoAxis connects practical audio and signal-processing project work with a parallel cardiovascular research direction. It is a venture in development.
@@ -11,21 +11,21 @@ ENGINEERING TASKS
 - Compact-model prototypes: feature preparation, recorded-example evaluation and export preparation within an agreed scope; target-device testing is separate.
 
 FOUNDER ENGINEERING EXPERIENCE
-The portfolio documents investigation of four difficult recordings, repeated acoustic reporting including a 156-configuration report, compact-model export and an offline audio-to-motion prototype. These are founder project scopes, not company traction figures.
+The portfolio documents investigation of four difficult recordings, repeated acoustic reporting including a 156-combination report, compact-model export and an offline audio-to-motion prototype. These are founder project scopes, not company traction figures.
 https://zafar-ahmad-5359.github.io/audio.html
 A separately authored synthetic recording-comparison example includes its source, exact metric definitions and computed output. It is a public demonstration, not a client result.
 https://zafar-ahmad-5359.github.io/audio.html#comparison-demo
 
 CARDIAC RESEARCH
-The research investigates an acoustic timing reference for phase-aware murmur characterisation. In the October patient-grouped dataset evaluation, expert-reviewed phase boundaries provided useful information; the tested synthetic-ECG timing route did not establish a downstream advantage over equal-time windows. Reliable automatic timing and clinical transfer remain open research questions.
-The two first-author journal manuscripts remain under revision: IEEE JBHI minor revision; EHJ Digital Health major revision (status evidence updated 9 October 2026). No accepted-publication or clinical-readiness claim is made.
+The research investigates an acoustic timing reference for phase-aware murmur characterisation. In the October 2026 patient-grouped dataset evaluation, expert-reviewed phase boundaries provided useful information; the tested synthetic-ECG timing route did not establish a downstream advantage over equal-time windows. Reliable automatic timing and clinical transfer remain open research questions.
+Two first-author journal manuscripts are in revision (status as of 9 October 2026): IEEE Journal of Biomedical and Health Informatics, minor revision; European Heart Journal – Digital Health, major revision. Neither is accepted or published, and no clinical-readiness claim is made.
 https://zafar-ahmad-5359.github.io/research.html
 
 PROPOSED NEXT STEPS
-Agree focused engineering inputs, outputs and acceptance criteria; deliver an inspectable workflow and document its limits. In parallel, evaluate automatic timing, cross-device/cohort transfer and the requirements of a supported research application. The service-versus-research weighting remains open to refinement.
+Agree focused engineering inputs, outputs and acceptance criteria; deliver an inspectable workflow and document its limits. In parallel, test whether an automatic timing method can preserve the value of reliable phase information, then evaluate cross-device/cohort transfer and the requirements of a supported research application.
 
 START A CONVERSATION
-Email the goal, input format/approximate volume, required output, and any platform or deadline constraint. Begin with a description; samples can be agreed during scoping.
+Email the goal, input format and approximate duration or volume, acquisition conditions, required outputs and any target platform or deadline. Please describe the task before sending any recordings.
 ahmadzafar577@gmail.com
 
-This is a venture overview, not a funding offer or a finished cardiac-device specification. Academic and client work remain distinct from company ownership and institutional partnership.
+This is a venture overview, not a funding offer or a finished cardiac-device specification. The academic research and client projects described here remain distinct from PhonoAxis ownership and any institutional partnership.

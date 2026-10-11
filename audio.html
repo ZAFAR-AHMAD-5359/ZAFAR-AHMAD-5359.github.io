@@ -8,16 +8,22 @@
   <meta name="theme-color" content="#192321">
   <link rel="canonical" href="https://zafar-ahmad-5359.github.io/audio.html">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Zafar Ahmad · PhonoAxis">
   <meta property="og:title" content="Zafar Ahmad — Audio &amp; Acoustic Engineering">
   <meta property="og:description" content="Five signal-processing cases, clearly scoped outputs and a reproducible synthetic recording-comparison example.">
   <meta property="og:url" content="https://zafar-ahmad-5359.github.io/audio.html">
   <meta property="og:image" content="https://zafar-ahmad-5359.github.io/assets/portfolio-social-preview.png">
-  <meta property="og:image:alt" content="Zafar Ahmad: cardiovascular research and audio engineering, with PhonoAxis biosignal and acoustic engineering.">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Zafar Ahmad and PhonoAxis: Listening to the heart. Engineering the signal. Routes to cardiovascular research, audio and acoustic engineering, and PhonoAxis.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Zafar Ahmad — Audio &amp; Acoustic Engineering">
   <meta name="twitter:description" content="Five signal-processing cases and an original reproducible recording-comparison example.">
   <meta name="twitter:image" content="https://zafar-ahmad-5359.github.io/assets/portfolio-social-preview.png">
+  <meta name="twitter:image:alt" content="Zafar Ahmad and PhonoAxis: Listening to the heart. Engineering the signal. Routes to cardiovascular research, audio and acoustic engineering, and PhonoAxis.">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%23192321'/%3E%3Cpath d='M6 17h5l3-9 4 16 3-7h5' fill='none' stroke='%23f5f5f2' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&amp;family=Newsreader:ital,wght@0,400;0,500;1,400&amp;display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&amp;family=Newsreader:ital,wght@0,400;0,500;1,400&amp;display=swap"></noscript>
   <link rel="stylesheet" href="styles.css">
   <script src="app.js" defer></script>
 </head>
@@ -33,18 +39,19 @@
       <div>
         <p class="eyebrow">Audio &amp; acoustic engineering portfolio</p>
         <h1 id="hero-title">Practical tools.<br><em>Careful listening.</em></h1>
-        <p class="hero-copy">I build signal-processing workflows for recording investigation, repeatable comparison reports, compact models and audio-driven motion timelines.</p>
-        <div class="hero-actions"><a class="button" href="#projects">Selected projects</a><a class="button secondary" href="#comparison-demo">Inspect an output example</a></div>
+        <p class="hero-copy">I work on signal-processing workflows for recording investigation, repeatable comparison reports, compact-model export and audio-driven motion timelines.</p>
+        <div class="hero-actions"><a class="button" href="#projects">Selected projects</a><a class="button secondary" href="#comparison-demo">See a reproducible output sample</a></div>
       </div>
       <aside class="hero-aside">
         <strong>Audio DSP · Acoustic analysis · Applied machine learning</strong>
-        <p>Python and MATLAB engineering, with reproducible analysis, useful reports and clearly stated processing limits.</p>
+        <p>Python and MATLAB engineering, with reproducible analysis, useful reports and clearly stated processing limits. MS Electrical Engineering (NUST, 2026) and two first-author signal-classification conference papers.</p>
         <div class="tag-list"><span class="tag">Python / SciPy</span><span class="tag">MATLAB / Simulink</span><span class="tag">TensorFlow Lite</span><span class="tag">Audio software</span></div>
+        <div class="inline-links"><a class="text-link" href="#contact">Discuss a project</a><a class="text-link" href="research.html#heart-sound-studies">Published classification research</a></div>
       </aside>
     </section>
     <nav class="section-nav shell" aria-label="Engineering page sections"><a href="#projects">Selected projects</a><a href="#capabilities">Capabilities</a><a href="#process">Project approach</a><a href="#contact">Contact</a></nav>
     <section id="projects" class="section shell" aria-labelledby="projects-title">
-      <div class="section-top"><div><p class="section-label">Selected engineering work</p><h2 id="projects-title">From the problem<br>to <em>the deliverable.</em></h2><p class="section-intro">Five case studies cover analysis work and implemented prototypes. The new synthetic example below makes a comparison output inspectable while client recordings and source code remain confidential.</p></div></div>
+      <div class="section-top"><div><p class="section-label">Selected engineering work</p><h2 id="projects-title">From the problem<br>to <em>the deliverable.</em></h2><p class="section-intro">Five case studies cover analysis work and implemented prototypes. Client recordings and source code remain confidential, so an original synthetic example in case 02 makes a comparison output inspectable.</p></div></div>
       <nav class="case-index" aria-label="Audio case studies"><a href="#restoration">01 / Recording investigation</a><a href="#acoustic-comparison">02 / Recording comparison</a><a href="#compact-classifier">03 / Compact classifier</a><a href="#haptics">04 / Offline haptics</a><a href="#matlab-denoising">05 / MATLAB denoising</a></nav>
 
       <article id="restoration" class="project">
@@ -58,9 +65,7 @@
             <div><dt>Method</dt><dd>Welch spectra, short-time Fourier analysis, filtering, pretrained enhancement and cross-model comparison.</dd></div>
             <div><dt>Output</dt><dd>Processed recordings and reports distinguishing candidate speech, tonal interference and unresolved events.</dd></div>
             <div><dt>Evaluation</dt><dd>Compared spectral, event and voice-activity findings; no ground-truth transcript or measured intelligibility gain is established.</dd></div>
-            <div><dt>Dated evidence</dt><dd>Analysis reports dated August 2026.</dd></div>
           </dl>
-          <p>The reports document candidate events and uncertainty; enhancement alone does not establish a transcript.</p>
           <div class="tag-list"><span class="tag">Python</span><span class="tag">DeepFilterNet3</span><span class="tag">MetricGAN+</span><span class="tag">SepFormer</span><span class="tag">Silero VAD</span></div>
           <details><summary>What the analysis can establish</summary><p>Enhancement can support listening and investigation. A voice-activity score does not certify words, speaker identity or recording authenticity, and enhancement models can introduce artefacts. Reports retain these limits rather than promise recovered speech.</p></details>
         </div>
@@ -75,39 +80,38 @@
             <div><dt>Task</dt><dd>Compare many recorded conditions consistently and present their differences clearly.</dd></div>
             <div><dt>My role</dt><dd>Analysis scripting, comparative figures and structured reporting across successive rounds.</dd></div>
             <div><dt>Method</dt><dd>Batch analysis, frequency-band summaries, comparison plots and common reporting templates.</dd></div>
-            <div><dt>Output</dt><dd>Analysis scripts, comparison figures and reports, including the 156-condition report.</dd></div>
+            <div><dt>Output</dt><dd>Analysis scripts, comparison figures and reports, including the 156-combination report.</dd></div>
             <div><dt>Evaluation</dt><dd>Recording-level comparisons; interpretation depends on acquisition controls, calibration and consistent metric definitions.</dd></div>
-            <div><dt>Dated evidence</dt><dd>Comparison reports saved during 2024–2025.</dd></div>
           </dl>
           <p>Recording differences alone do not establish a hardware-performance advantage.</p>
           <div class="tag-list"><span class="tag">NumPy / SciPy</span><span class="tag">pandas</span><span class="tag">librosa</span><span class="tag">matplotlib</span></div>
 
           <aside id="comparison-demo" class="demo-block" aria-labelledby="comparison-demo-title">
             <p class="eyebrow">Original public example · Synthetic inputs</p>
-            <h3 id="comparison-demo-title">Separate level changes from spectral changes</h3>
-            <p>This newly authored demonstration compares four generated two-second mono signals at 8,000 samples/s. It illustrates a reproducible report output, independently of the client study above.</p>
-            <p>RMS uses normalised digital amplitude; dBFS uses amplitude 1 as its reference.</p>
-            <p class="table-scroll-hint small-print">Scroll the table horizontally if needed.</p>
+            <h4 id="comparison-demo-title">Separate level changes from spectral changes</h4>
+            <p>This original demonstration compares four generated two-second mono signals at 8,000 samples/s. It shows the structure of a reproducible comparison output: input definitions, metric definitions, a results table, a plot, method notes and a regenerating script. It is independent of the client study above.</p>
+            <p>Root-mean-square (RMS) values use normalised digital amplitude; decibels relative to full scale (dBFS) use amplitude 1 as the reference.</p>
+            <p class="table-scroll-hint small-print">On narrow screens, scroll the table sideways to see every column.</p>
             <div class="table-wrap" role="region" aria-label="Synthetic recording-comparison results" tabindex="0">
               <table class="evidence-table demo-metrics">
                 <caption>Computed synthetic results</caption>
-                <thead><tr><th scope="col">Condition</th><th scope="col">RMS</th><th scope="col">Level<br>(dBFS)</th><th scope="col">100 Hz<br>power share</th></tr></thead>
+                <thead><tr><th scope="col">Condition</th><th scope="col">RMS</th><th scope="col">Level<br>(dBFS)</th><th scope="col">100&nbsp;Hz<br>power share</th></tr></thead>
                 <tbody>
-                  <tr><th scope="row">A / Baseline</th><td>0.158114</td><td>−16.02</td><td>80.00%</td></tr>
-                  <tr><th scope="row">B / More 100 Hz</th><td>0.291548</td><td>−10.71</td><td>94.12%</td></tr>
-                  <tr><th scope="row">C / Half amplitude</th><td>0.079057</td><td>−22.04</td><td>80.00%</td></tr>
-                  <tr><th scope="row">D / Added 3000 Hz</th><td>0.162019</td><td>−15.81</td><td>76.19%</td></tr>
+                  <tr><th scope="row">A <span class="cond">/&nbsp;Baseline</span></th><td>0.158114</td><td>−16.02</td><td>80.00%</td></tr>
+                  <tr><th scope="row">B <span class="cond">/&nbsp;More 100&nbsp;Hz</span></th><td>0.291548</td><td>−10.71</td><td>94.12%</td></tr>
+                  <tr><th scope="row">C <span class="cond">/&nbsp;Half amplitude</span></th><td>0.079057</td><td>−22.04</td><td>80.00%</td></tr>
+                  <tr><th scope="row">D <span class="cond">/&nbsp;Added 3000&nbsp;Hz</span></th><td>0.162019</td><td>−15.81</td><td>76.19%</td></tr>
                 </tbody>
               </table>
             </div>
-            <p><strong>What this shows:</strong> halving the amplitude in C lowers the RMS level by 6.02 dB relative to A, while the 100 Hz power share stays at 80%. A lower recorded level can occur without a change in relative spectral composition.</p>
+            <p><strong>What this shows:</strong> halving the amplitude in C lowers the RMS level by 6.02 dB relative to A, while the 100 Hz power share stays at 80%. A lower digital level can occur without any change in relative spectral composition.</p>
             <details><summary>Input controls, exact metrics and interpretation</summary>
               <p>Each signal is the sum of zero-phase sine waves at 100, 1000 and 3000 Hz. Their amplitudes are A: 0.20/0.10/0.00; B: 0.40/0.10/0.00; C: 0.10/0.05/0.00; D: 0.20/0.10/0.05. Duration, sample rate and frequencies are fixed, with no random noise, normalisation or processing.</p>
-              <p>RMS is the square root of mean squared sample amplitude. Level is 20 log<sub>10</sub>(RMS). The 100 Hz power share is the exact coherent Fourier-bin power divided by total mean-square power. These tones complete integer cycles, so this example needs no window correction. The downloadable report gives the calculation and assumptions.</p>
+              <p>RMS is the square root of the mean-square sample amplitude. Level is 20 log<sub>10</sub>(RMS). The 100 Hz power share is the exact coherent Fourier-bin power divided by total mean-square power. These tones complete integer cycles, so this example needs no window correction. The downloadable report gives the calculation and assumptions.</p>
               <p>These are digital signal metrics, rather than calibrated sound-pressure levels or loudness. The example makes no claim about intelligibility, noise reduction or turntable hardware. Its coherent-tone assumptions require separate assessment for other recordings.</p>
             </details>
             <div class="inline-links"><a class="text-link" href="assets/recording-comparison-demo.svg">Open plotted comparison (SVG)</a><a class="text-link" href="assets/recording-comparison-demo.csv" download>Results &amp; input manifest (CSV)</a><a class="text-link" href="assets/recording-comparison-demo.txt" download>Methods &amp; report (TXT)</a><a class="text-link" href="assets/recording-comparison-demo.py" download>Reproduce with Python</a></div>
-            <p class="small-print">Original teaching example created for this portfolio on 10 October 2026, using no client files. Python 3.9+ and its standard library reproduce the CSV, plot and report.</p>
+            <p class="small-print">Original synthetic example created for this portfolio on 10 October 2026, using no client files. Python 3.9+ and its standard library reproduce the CSV, plot and report.</p>
           </aside>
         </div>
       </article>
@@ -124,12 +128,12 @@
           </dl>
           <figure>
             <ol class="steps method-outline" aria-label="Compact classifier workflow">
-              <li><div><h3>Represent the recording</h3><p>Arrange eight frames of 32 FFT-band features as the model input.</p></div></li>
-              <li><div><h3>Train and evaluate offline</h3><p>Use a compact 1,254-parameter convolutional classifier for the recorded examples.</p></div></li>
-              <li><div><h3>Convert the model</h3><p>Prepare representative data for the TensorFlow Lite quantisation/conversion workflow.</p></div></li>
-              <li><div><h3>Package the export</h3><p>Export a C byte array for subsequent device integration and testing.</p></div></li>
+              <li><div><h4>Represent the recording</h4><p>Arrange eight frames of 32 FFT-band features as the model input.</p></div></li>
+              <li><div><h4>Train and evaluate offline</h4><p>Use a compact 1,254-parameter convolutional classifier for the recorded examples.</p></div></li>
+              <li><div><h4>Convert the model</h4><p>Prepare representative data for the TensorFlow Lite quantisation/conversion workflow.</p></div></li>
+              <li><div><h4>Package the export</h4><p>Export a C byte array for subsequent device integration and testing.</p></div></li>
             </ol>
-            <figcaption>Original method explanation of the reviewed workflow. Example-level results do not establish performance on independent users or devices. Target-hardware latency, memory and clinical performance require separate tests. <a class="text-link" href="assets/compact-audio-classifier-method.svg">Open the larger workflow schematic (SVG)</a>.</figcaption>
+            <figcaption>Original explanation of the project workflow. Example-level results do not establish performance on independent users or devices. Target-hardware latency, memory and clinical performance require separate tests. <a class="text-link" href="assets/compact-audio-classifier-method.svg">Open the larger workflow schematic (SVG)<span class="visually-hidden">: compact classifier</span></a>.</figcaption>
           </figure>
           <div class="tag-list"><span class="tag">TensorFlow / Keras</span><span class="tag">FFT features</span><span class="tag">TensorFlow Lite</span><span class="tag">C export</span></div>
         </div>
@@ -147,14 +151,14 @@
           </dl>
           <figure>
             <ol class="steps method-outline" aria-label="Offline audio-to-haptics workflow">
-              <li><div><h3>Load stereo audio</h3><p>Prepare a recording file for analysis.</p></div></li>
-              <li><div><h3>Extract spectral and onset features</h3><p>Measure energy, frequency-band cues and stereo balance.</p></div></li>
-              <li><div><h3>Apply event rules</h3><p>Identify transient and low-band cues for the configured mappings.</p></div></li>
-              <li><div><h3>Map events to motion parameters</h3><p>Generate pitch, roll, heave and vibration values using adjustable rules.</p></div></li>
-              <li><div><h3>Condition the signals</h3><p>Smooth the outputs and apply configured limits.</p></div></li>
-              <li><div><h3>Export a CSV timeline</h3><p>Write values on a 2 ms output grid for a subsequent integration step.</p></div></li>
+              <li><div><h4>Load stereo audio</h4><p>Prepare a recording file for analysis.</p></div></li>
+              <li><div><h4>Extract spectral and onset features</h4><p>Measure energy, frequency-band cues and stereo balance.</p></div></li>
+              <li><div><h4>Apply event rules</h4><p>Identify transient and low-band cues for the configured mappings.</p></div></li>
+              <li><div><h4>Map events to motion parameters</h4><p>Generate pitch, roll, heave and vibration values using adjustable rules.</p></div></li>
+              <li><div><h4>Condition the signals</h4><p>Smooth the outputs and apply configured limits.</p></div></li>
+              <li><div><h4>Export a CSV timeline</h4><p>Write values on a 2 ms output grid for a subsequent integration step.</p></div></li>
             </ol>
-            <figcaption>Original method explanation. The 2 ms spacing describes the output grid; it does not establish live processing at 500 Hz. Hardware integration and physical safety remain separate validation tasks. <a class="text-link" href="assets/offline-audio-haptics-method.svg">Open the larger workflow schematic (SVG)</a>.</figcaption>
+            <figcaption>Original method explanation. The 2 ms spacing describes the output grid; it does not establish live processing at 500 Hz. Hardware integration and physical safety remain separate validation tasks. <a class="text-link" href="assets/offline-audio-haptics-method.svg">Open the larger workflow schematic (SVG)<span class="visually-hidden">: offline audio-to-haptics</span></a>.</figcaption>
           </figure>
           <div class="tag-list"><span class="tag">Python</span><span class="tag">librosa</span><span class="tag">YAML configuration</span><span class="tag">CSV tooling</span></div>
         </div>
@@ -180,7 +184,7 @@
       <div class="section-top"><div><p class="section-label">Capabilities</p><h2 id="capabilities-title">Signal analysis,<br><em>made usable.</em></h2></div></div>
       <div class="details-grid">
         <article><h3>Audio &amp; acoustic analysis</h3><p>Time-frequency analysis, filtering, event investigation and comparison reports. See the <a class="text-link" href="#restoration">recording investigation</a> and <a class="text-link" href="#comparison-demo">synthetic comparison output</a>.</p></article>
-        <article><h3>Applied machine learning</h3><p>Feature preparation, offline evaluation and export workflows. The <a class="text-link" href="#compact-classifier">compact-classifier case</a> shows the scope and the separate device-testing step.</p></article>
+        <article><h3>Applied machine learning</h3><p>Feature preparation, offline evaluation and export workflows. The <a class="text-link" href="#compact-classifier">compact-classifier case</a> shows the scope and the separate device-testing step; my published <a class="text-link" href="research.html#heart-sound-studies">heart-sound classification studies</a> show personally attributed model development.</p></article>
         <article><h3>Research software</h3><p>Batch-processing tools, configurable pipelines and MATLAB/Simulink prototypes. See <a class="text-link" href="#haptics">audio-to-motion processing</a> and the <a class="text-link" href="#matlab-denoising">classical DSP workflow</a>.</p></article>
       </div>
     </section>
@@ -195,12 +199,12 @@
     </section>
     <section id="contact" class="contact" aria-labelledby="contact-title">
       <div class="shell">
-        <div><h2 id="contact-title">Have a recording<br>or a signal problem?</h2><p>Start with the goal, recording format and approximate duration or volume, acquisition conditions, expected outputs and any target environment or deadline.</p><p>Describe the task first so we can agree scope and a suitable way to handle any recordings.</p><p><a class="contact-email" href="mailto:ahmadzafar577@gmail.com">ahmadzafar577@gmail.com</a></p></div>
-        <div class="hero-actions"><a class="button" href="mailto:ahmadzafar577@gmail.com?subject=Audio%20or%20signal-processing%20project&amp;body=Goal%3A%20%0AInput%20format%20and%20approximate%20volume%3A%20%0AAcquisition%20conditions%3A%20%0AOutputs%20required%3A%20%0ATarget%20environment%20or%20deadline%3A%20">Discuss a project</a><a class="button secondary" href="startup.html#work">PhonoAxis services</a></div>
+        <div><h2 id="contact-title">Have a recording<br>or a signal problem?</h2><p>Start with the goal, input format and approximate duration or volume, acquisition conditions, required outputs and any target platform or deadline.</p><p>Please describe the task before sending any recordings; we can then agree the scope and how recordings will be shared and handled.</p><p><a class="contact-email" href="mailto:ahmadzafar577@gmail.com">ahmadzafar577@gmail.com</a></p></div>
+        <div class="hero-actions"><a class="button" href="mailto:ahmadzafar577@gmail.com?subject=Audio%20or%20signal-processing%20project&amp;body=Goal%3A%20%0D%0AInput%20format%20and%20approximate%20duration%20or%20volume%3A%20%0D%0AAcquisition%20conditions%3A%20%0D%0ARequired%20outputs%3A%20%0D%0ATarget%20platform%20or%20deadline%3A%20%0D%0AAny%20confidentiality%20or%20data-handling%20constraints%3A%20">Discuss a project</a><a class="button secondary" href="startup.html#work">PhonoAxis services</a></div>
       </div>
     </section>
   </main>
-  <footer class="footer shell"><span>© 2026 Zafar Ahmad</span><div class="footer-links"><a href="https://github.com/ZAFAR-AHMAD-5359">GitHub</a><a href="https://scholar.google.com/citations?user=D5W9TVwAAAAJ&amp;hl=en">Google Scholar</a><a href="https://www.linkedin.com/in/zafar-ahmad-ab87b6183/">LinkedIn</a></div></footer>
+  <footer class="footer shell"><span>© 2026 Zafar Ahmad</span><nav class="footer-links footer-routes" aria-label="Footer pages"><a href="index.html">Overview</a><a href="research.html">Cardiovascular research</a><a href="audio.html">Audio &amp; acoustics</a><a href="startup.html">PhonoAxis</a></nav><div class="footer-links"><a href="https://github.com/ZAFAR-AHMAD-5359">GitHub</a><a href="https://scholar.google.com/citations?user=D5W9TVwAAAAJ&amp;hl=en">Google Scholar</a><a href="https://www.linkedin.com/in/zafar-ahmad-ab87b6183/">LinkedIn</a></div></footer>
 </body>
 </html>
 

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="580" viewBox="0 0 960 580" role="img" aria-labelledby="title desc">
 <title id="title">Synthetic recording comparison: level and tone-power share</title>
-<desc id="desc">Four generated two-second mono conditions, with digital RMS level and the percentage of mean-square power in the exact 100 Hz DFT bin. A halved amplitude changes level but preserves the tone-power fraction.</desc>
+<desc id="desc">Four generated two-second mono conditions, with digital RMS level and the percentage of mean-square power in the exact 100 Hz DFT bin. A halved amplitude changes level but preserves the 100 Hz power share.</desc>
 <rect width="960" height="580" fill="#f5f5f2"/>
 <g font-family="Arial,Helvetica,sans-serif" fill="#192321">
 <text x="50" y="50" font-size="27" font-weight="700">A controlled recording-comparison example</text>
@@ -45,6 +45,6 @@
 <text x="315.72" y="390" font-size="17">-15.81</text>
 <rect x="545" y="370" width="228.57" height="28" fill="#704260"/>
 <text x="781.57" y="390" font-size="17">76.19%</text>
-<text x="50" y="500" font-size="19">C is 6.02 dB below A, with the same 100 Hz power fraction.</text>
+<text x="50" y="500" font-size="19">C is 6.02 dB below A, with the same 100 Hz power share.</text>
 <text x="50" y="534" font-size="17" fill="#526059">Defined digital levels; not sound-pressure levels, loudness or hardware-performance measurements.</text>
 </g></svg>

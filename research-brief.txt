@@ -3,7 +3,7 @@ Prepared 10 October 2026; updated 11 October 2026. Manuscript statuses last chec
 Portfolio: https://zafar-ahmad-5359.github.io/research.html
 Academic CV: https://zafar-ahmad-5359.github.io/downloads/Zafar-Ahmad-Academic-CV.pdf
 
-I am an electrical engineer and cardiovascular signal-processing researcher with an MS from the National University of Sciences and Technology (NUST), conferred on 18 May 2026. I study electrocardiogram (ECG), phonocardiogram or heart-sound (PCG), and photoplethysmogram or optical-pulse (PPG) signals, connecting clinical data collection, machine learning and wearable prototyping.
+I am an electrical engineer and cardiovascular signal-processing researcher with an MS from the National University of Sciences and Technology (NUST), conferred on 18 May 2026. I study electrocardiogram (ECG), phonocardiogram or heart-sound (PCG), and photoplethysmogram or optical-pulse (PPG) signals, connecting clinical data collection, deep learning and wearable prototyping.
 
 MS thesis: Cross-Modal Reconstruction of Cardiac Signals: Decoding ECG-PCG Electromechanical Coupling Dynamics. Supervisor: Dr. Nazia Perwaiz; co-supervisor: Dr. Muhammad Salman Khan.
 

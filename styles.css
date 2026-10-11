@@ -145,3 +145,11 @@ p a:not(.button),dd a,figcaption a{text-decoration-color:var(--muted);text-decor
  .project,.publication,.timeline-item,.evaluation-step{break-inside:avoid}
  .section{padding:24px 0}
 }
+
+/* Header mark shared with the homepage (ZA + mono wordmark). */
+.wordmark{display:inline-flex;align-items:center;gap:10px;font:500 .95rem/1 'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:0}
+.wordmark .wordmark-mark{display:grid;place-items:center;width:32px;height:32px;border-radius:8px;background:#0a0e14;color:#22d3ee;font:700 .8rem/1 'Jost',sans-serif;letter-spacing:.02em}
+.wordmark .wordmark-text{color:var(--ink)}
+.wordmark .wordmark-text span{color:var(--accent)}
+.wordmark:hover .wordmark-text{color:var(--accent)}
+@media(max-width:760px){.wordmark{font-size:.9rem}}

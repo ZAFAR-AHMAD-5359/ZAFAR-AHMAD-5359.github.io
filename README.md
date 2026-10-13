@@ -1,6 +1,6 @@
 # Zafar Ahmad - Research, Engineering & PhonoAxis
 
-Static website: a personal homepage (engineering theme, light/dark), dedicated cardiovascular research and audio/acoustic engineering portfolios, and a PhonoAxis venture page. Updated 12 October 2026. Intended owner: ZAFAR-AHMAD-5359.
+Static website: a personal homepage (engineering theme, light/dark), dedicated cardiovascular research and audio/acoustic engineering portfolios, and a PhonoAxis venture page. Updated 13 October 2026. All four routes share an engineering theme and a persistent light/dark preference. The homepage provides accessible mobile navigation, a stable professional introduction, audience-specific portfolio routes and an optional illustrative banner with a pause control. The tool list is static, and reduced-motion preferences are respected. Intended owner: ZAFAR-AHMAD-5359.
 
 This public package includes reviewed website files, the adapted academic CV, resized, colour-corrected derivatives of a supplied ESC presentation photograph (camera metadata removed; the poster's superseded results are softened), two original method schematics, the selected PhonoAxis symbol/favicon and an original synthetic recording-comparison example with reproducible source and output. Sharing metadata, a social-preview image, robots.txt and a four-page sitemap are included. Private application records, client recordings, private project code and thesis/manuscript drafts are excluded.
 

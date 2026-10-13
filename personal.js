@@ -1,42 +1,31 @@
 'use strict';
-// Personal page behaviour: theme, typed role, marquee loop and an illustrative oscilloscope banner.
-// The banner draws synthetic textbook waveforms only — no recordings or model output.
-
+// Accessible navigation; banner uses textbook waveforms, never recordings or inference.
 const root = document.documentElement;
-const reduceMotion = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : { matches: false };
-
-/* Theme toggle (preference kept in this browser only). */
-const toggle = document.querySelector('.theme-toggle');
-function setTheme(theme) {
-  root.setAttribute('data-theme', theme);
-  try { localStorage.setItem('za-theme', theme); } catch (e) { /* storage unavailable */ }
-  toggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
-  document.querySelector('meta[name="theme-color"]').setAttribute('content', theme === 'dark' ? '#0a0e14' : '#f6f8fb');
-  readColours();
-  if (!running) drawFrame(0);
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+const menuButton = document.querySelector('.home-menu-toggle');
+const homeNav = document.getElementById('home-nav');
+function closeHomeMenu(returnFocus = false) {
+  menuButton.setAttribute('aria-expanded', 'false');
+  homeNav.classList.remove('open');
+  if (returnFocus) menuButton.focus();
 }
-toggle.addEventListener('click', () => setTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'));
-toggle.setAttribute('aria-label', root.getAttribute('data-theme') === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
-
-/* Typed role line (decorative; a static sentence is provided for assistive technology). */
-const roles = ['Cardiovascular Signal Processing Engineer', 'Deep Learning Researcher', 'Biomedical & Audio DSP Freelancer'];
-const roleEl = document.querySelector('.role-text');
-if (roleEl && !reduceMotion.matches) {
-  let r = 0, i = roles[0].length, deleting = true;
-  const tick = () => {
-    const word = roles[r];
-    if (deleting) { i--; if (i <= 0) { deleting = false; r = (r + 1) % roles.length; } }
-    else { i++; if (i >= roles[r].length) { deleting = true; roleEl.textContent = roles[r]; return setTimeout(tick, 2200); } }
-    roleEl.textContent = (deleting ? word : roles[r]).slice(0, Math.max(i, 0));
-    setTimeout(tick, deleting ? 28 : 55);
-  };
-  setTimeout(tick, 2400);
-}
-
-/* Seamless marquee: duplicate the chips once so the -50% loop has no gap. */
-const track = document.querySelector('.marquee-track');
-if (track && !reduceMotion.matches) track.innerHTML += track.innerHTML;
-
+menuButton.hidden = false;
+menuButton.addEventListener('click', () => {
+  const open = menuButton.getAttribute('aria-expanded') !== 'true';
+  menuButton.setAttribute('aria-expanded', String(open));
+  homeNav.classList.toggle('open', open);
+});
+homeNav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => closeHomeMenu()));
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && homeNav.classList.contains('open')) closeHomeMenu(true);
+});
+document.addEventListener('click', event => {
+  if (!event.target.closest('.topbar')) closeHomeMenu();
+});
+window.matchMedia('(max-width: 980px)').addEventListener('change', () => closeHomeMenu());
+document.documentElement.classList.add('home-nav-ready');
+const motion = document.querySelector('.scope-motion');
+let paused = false;
 /* Oscilloscope banner. */
 const canvas = document.getElementById('scope');
 const ctx = canvas ? canvas.getContext('2d') : null;
@@ -104,16 +93,26 @@ function loop(ts) {
   drawFrame(dt);
   raf = requestAnimationFrame(loop);
 }
-function start() { if (running || reduceMotion.matches || !visible || document.hidden) return; running = true; last = 0; raf = requestAnimationFrame(loop); }
+function start() { if (running || paused || reduceMotion.matches || !visible || document.hidden) return; running = true; last = 0; raf = requestAnimationFrame(loop); }
 function stop() { running = false; cancelAnimationFrame(raf); drawFrame(0); }
 if (canvas && ctx) {
   readColours();
   resize();
   window.addEventListener('resize', resize);
+  window.addEventListener('za-themechange', () => { readColours(); drawFrame(0); });
+  function syncMotion() {
+    motion.disabled = reduceMotion.matches;
+    motion.setAttribute('aria-pressed', String(paused));
+    motion.querySelector('span').textContent = reduceMotion.matches ? 'Motion reduced' : paused ? 'Motion paused' : 'Pause motion';
+    if (paused || reduceMotion.matches) stop(); else start();
+  }
+  motion.hidden = false;
+  motion.addEventListener('click', () => { paused = !paused; syncMotion(); });
+  syncMotion();
   if ('IntersectionObserver' in window) {
     new IntersectionObserver(entries => { visible = entries[0].isIntersecting; visible ? start() : stop(); }).observe(canvas);
   }
   document.addEventListener('visibilitychange', () => (document.hidden ? stop() : start()));
-  if (reduceMotion.addEventListener) reduceMotion.addEventListener('change', () => (reduceMotion.matches ? stop() : start()));
+  reduceMotion.addEventListener('change', syncMotion);
   start();
 }

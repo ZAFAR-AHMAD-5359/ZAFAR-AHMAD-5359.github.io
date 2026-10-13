@@ -1,6 +1,6 @@
 PHONOAXIS — VENTURE OVERVIEW
 Biosignal & Acoustic Engineering
-Updated 11 October 2026 | Founder: Zafar Ahmad
+Updated 13 October 2026 | Founder: Zafar Ahmad
 https://zafar-ahmad-5359.github.io/startup.html
 
 PhonoAxis connects practical audio and signal-processing project work with a parallel cardiovascular research direction. It is a venture in development.
@@ -11,7 +11,7 @@ ENGINEERING TASKS
 - Compact-model prototypes: feature preparation, recorded-example evaluation and export preparation within an agreed scope; target-device testing is separate.
 
 FOUNDER ENGINEERING EXPERIENCE
-The portfolio documents investigation of four difficult recordings, repeated acoustic reporting including a 156-combination report, compact-model export and an offline audio-to-motion prototype. These are founder project scopes, not company traction figures.
+The portfolio documents investigation of four difficult recordings, repeated acoustic reporting including a 156-combination report, and an offline audio-to-motion prototype. It also describes a compact-classifier project workflow. These are project scopes, rather than company traction figures.
 https://zafar-ahmad-5359.github.io/audio.html
 A separately authored synthetic recording-comparison example includes its source, exact metric definitions and computed output. It is a public demonstration, not a client result.
 https://zafar-ahmad-5359.github.io/audio.html#comparison-demo

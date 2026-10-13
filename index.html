@@ -14,22 +14,14 @@
   <meta property="og:description" content="ECG, heart-sound and PPG research, wearable sensing, publications and freelance signal-processing work.">
   <meta property="og:image" content="https://zafar-ahmad-5359.github.io/assets/portfolio-social-preview.png">
   <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Zafar Ahmad and PhonoAxis: Listening to the heart. Engineering the signal. Routes to cardiovascular research, audio and acoustic engineering, and PhonoAxis.">
+  <meta property="og:image:alt" content="Zafar Ahmad: cardiovascular signal processing and deep learning. Two first-author conference papers, ESC Congress 2026 presentations, and routes to research, audio engineering and PhonoAxis.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Zafar Ahmad — Cardiovascular Signal Processing &amp; Deep Learning">
   <meta name="twitter:description" content="ECG, heart-sound and PPG research, wearable sensing, publications and freelance signal-processing work.">
   <meta name="twitter:image" content="https://zafar-ahmad-5359.github.io/assets/portfolio-social-preview.png">
-  <meta name="twitter:image:alt" content="Zafar Ahmad and PhonoAxis: Listening to the heart. Engineering the signal. Routes to cardiovascular research, audio and acoustic engineering, and PhonoAxis.">
+  <meta name="twitter:image:alt" content="Zafar Ahmad: cardiovascular signal processing and deep learning. Two first-author conference papers, ESC Congress 2026 presentations, and routes to research, audio engineering and PhonoAxis.">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0e14'/%3E%3Cpath d='M4 17h6l3-8 4 15 3-7h8' fill='none' stroke='%2322d3ee' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
-  <script>
-    // Apply the saved or preferred theme before first paint.
-    (function () {
-      var t = null;
-      try { t = localStorage.getItem('za-theme'); } catch (e) {}
-      if (!t) t = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', t);
-    })();
-  </script>
+  <script src="theme.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap"></noscript>
@@ -41,7 +33,8 @@
 
   <header class="topbar">
     <a class="brand" href="#top" aria-label="Zafar Ahmad, back to top"><span class="brand-mark" aria-hidden="true">ZA</span><span class="brand-text">zafar<span>.</span>ahmad</span></a>
-    <nav class="topnav" aria-label="Sections">
+    <button class="home-menu-toggle" type="button" aria-controls="home-nav" aria-expanded="false" hidden>Menu <span aria-hidden="true">☰</span></button>
+    <nav class="topnav" id="home-nav" aria-label="Sections">
       <a href="#about">About</a>
       <a href="#research">Research</a>
       <a href="#freelance">Freelance</a>
@@ -49,7 +42,7 @@
       <a href="#publications">Publications</a>
       <a href="#contact" class="nav-cta">Let’s talk</a>
     </nav>
-    <button class="theme-toggle" type="button" aria-label="Switch colour theme"><span class="sun" aria-hidden="true">☀</span><span class="moon" aria-hidden="true">☾</span></button>
+    <button class="theme-toggle" type="button" hidden aria-label="Switch colour theme"><span class="sun" aria-hidden="true">☀</span><span class="moon" aria-hidden="true">☾</span></button>
   </header>
 
   <main id="main">
@@ -58,10 +51,12 @@
       <!-- Profile header -->
       <section class="profile" aria-labelledby="name">
         <div class="banner">
-          <canvas id="scope" aria-hidden="true"></canvas>
-          <span class="scope-label scope-ecg" aria-hidden="true">ECG</span>
-          <span class="scope-label scope-pcg" aria-hidden="true">PCG</span>
-          <span class="scope-note">illustrative signals</span>
+          <div class="scope-toolbar">
+            <div class="scope-legend" aria-hidden="true"><span class="scope-label scope-ecg">ECG</span><span class="scope-label scope-pcg">PCG</span></div>
+            <button class="scope-motion" type="button" aria-label="Pause banner motion" aria-pressed="false" hidden><span>Pause motion</span></button>
+          </div>
+          <p class="scope-note">illustrative signals</p>
+          <div class="scope-plot"><canvas id="scope" aria-hidden="true"></canvas></div>
         </div>
         <div class="profile-row">
           <img class="avatar" src="assets/zafar-ahmad-240.jpg" width="240" height="240" alt="Zafar Ahmad at ESC Congress 2026" fetchpriority="high">
@@ -71,20 +66,25 @@
           </div>
         </div>
         <h1 id="name">Zafar Ahmad</h1>
-        <p class="role" aria-hidden="true"><span class="role-text">Cardiovascular Signal Processing Engineer</span><span class="caret"></span></p>
-        <p class="visually-hidden">Cardiovascular signal-processing engineer, deep-learning researcher, and biomedical and audio signal-processing freelancer.</p>
+        <p class="role">Cardiovascular signal processing &amp; deep learning</p>
+        <p class="profile-intro">I investigate cardiac timing and wearable sensing, and help research and engineering teams turn recordings into reproducible analysis.</p>
         <p class="meta"><span>Islamabad, Pakistan</span><span>MS Electrical Engineering · NUST</span></p>
         <p class="status"><span class="dot" aria-hidden="true"></span>Open to PhD opportunities in cardiovascular digital health · Taking signal-processing projects</p>
+        <nav class="portfolio-hub" aria-label="Explore the portfolios">
+          <a href="research.html"><span class="hub-label">For PhD supervisors</span><strong>Cardiovascular research <span aria-hidden="true">↗</span></strong><span>Studies, publications &amp; doctoral direction</span></a>
+          <a href="audio.html"><span class="hub-label">For engineering clients</span><strong>Audio &amp; acoustics <span aria-hidden="true">↗</span></strong><span>Case studies &amp; a reproducible output sample</span></a>
+          <a href="startup.html"><span class="hub-label">Venture in development</span><strong>PhonoAxis <span aria-hidden="true">↗</span></strong><span>Research direction, scope &amp; collaboration</span></a>
+        </nav>
       </section>
 
       <!-- At a glance -->
       <section class="block" aria-labelledby="glance-title">
         <h2 id="glance-title" class="block-title"><span class="idx">01</span>At a glance</h2>
         <ul class="stats">
-          <li><strong>2</strong><span>first-author IEEE conference papers</span><small>ICAI 2023 · EUSIPCO 2024</small></li>
+          <li><strong>2</strong><span>first-author conference papers</span><small>ICAI 2023 · EUSIPCO 2024</small></li>
           <li><strong>2</strong><span>ESC Congress 2026 presentations</span><small>Munich · presenter</small></li>
-          <li><strong>3</strong><span>journal manuscripts in review or revision</span><small>JBHI · EHJ Digital Health · JSTSP</small></li>
-          <li><strong>5.0</strong><span>Fiverr rating</span><small>6 reviews · Level 1</small></li>
+          <li><strong>3</strong><span>journal manuscripts</span><small>Revision / last-reported review · 9 Oct 2026</small></li>
+          <li><strong>5.0</strong><span>Fiverr rating</span><small>6 reviews · Level 1 · 12 Oct 2026</small></li>
         </ul>
       </section>
 
@@ -95,8 +95,8 @@
           <div class="terminal-bar" aria-hidden="true"><i></i><i></i><i></i><span>~/zafar — whoami</span></div>
           <div class="terminal-body">
             <p>I’m a <strong>cardiovascular signal-processing engineer and researcher</strong>. One question connects my work: how the heart’s electrical activity relates to its mechanical and acoustic consequences, and how that relationship can be read from <strong>ECG</strong>, heart-sound (<strong>PCG</strong>) and optical-pulse (<strong>PPG</strong>) recordings.</p>
-            <p>It began with paediatric heart-sound collection in hospitals and schools in Pakistan, where I learned what cardiologists need from a recording. Since then I have built <strong>deep-learning models</strong> for cross-modal ECG–PCG reconstruction, probabilistic models of coupled cardiac events, and a low-cost wearable that records time-aligned ECG, PPG and motion.</p>
-            <p>Alongside research I take on <strong>audio and biomedical signal-processing projects</strong> — spectral analysis, comparison reports, classifiers and analysis tools. Next, I want doctoral training that joins signal-derived measurements with physiological models of individual patients.</p>
+            <p>It began with paediatric heart-sound collection in hospitals and schools in Pakistan, where I learned what cardiologists need from a recording. Since then I have worked on <strong>deep-learning models</strong> for cross-modal ECG–PCG reconstruction and a wearable research prototype for time-aligned ECG, PPG and motion. I am also developing a probabilistic model of coupled cardiac events.</p>
+            <p>Alongside research I take on <strong>audio and biomedical signal-processing projects</strong> — spectral analysis, comparison reports, classifiers and analysis tools. For my PhD, I want to investigate whether signal-derived cardiac timing can constrain patient-specific physiological models, with uncertainty and device differences treated explicitly. My current modelling is statistical and data-driven; physiological modelling and prospective validation are skills I want to develop during a PhD. <a href="research.html#doctoral">My doctoral question</a>.</p>
           </div>
         </div>
       </section>
@@ -115,7 +115,7 @@
           <article class="card">
             <p class="card-tag">CAREON · NUST</p>
             <h3>Wearable ECG · PPG · motion</h3>
-            <p>An ESP32 research prototype with AD8232 ECG, MAX30102 PPG and MPU6050 IMU sensors. I set the sampling plan (250 Hz ECG, 100 Hz PPG) and specified a 16-bit external ADC fallback for timing precision.</p>
+            <p>An ESP32 research prototype with AD8232 ECG, MAX30102 PPG and MPU6050 IMU sensors. I set 250 Hz ECG and 100 Hz PPG sampling targets and specified a 16-bit external ADC fallback for acquisition precision. Timing fidelity and motion sensitivity remain to be evaluated.</p>
             <p class="note-line">The ECG-to-pulse delay includes pre-ejection time, so it is not treated as isolated pulse transit time.</p>
             <a class="more" href="research.html#wearables">Project details <span aria-hidden="true">→</span></a>
           </article>
@@ -128,7 +128,7 @@
           <article class="card">
             <p class="card-tag">Published · ICAI 2023 · EUSIPCO 2024</p>
             <h3>Heart-sound classification</h3>
-            <p>1D convolutional networks with pitch-shift augmentation: binary paediatric congenital-heart-disease detection, and a separate five-class valvular/normal benchmark with band-selective augmentation and MFCC features.</p>
+            <p>ICAI 2023: a time-domain 1D CNN with pitch-shift augmentation for binary paediatric congenital-heart-disease detection. EUSIPCO 2024: band-selective pitch augmentation and MFCC features for a separate five-class valvular/normal heart-sound benchmark.</p>
             <a class="more" href="research.html#heart-sound-studies">Both papers <span aria-hidden="true">→</span></a>
           </article>
         </div>
@@ -141,8 +141,8 @@
       <!-- Tech stack -->
       <section class="block" aria-labelledby="stack-title">
         <h2 id="stack-title" class="block-title"><span class="idx">04</span>Tech stack</h2>
-        <div class="marquee" aria-hidden="true">
-          <div class="marquee-track">
+        <div class="skill-chips" aria-hidden="true">
+          <div class="skill-chip-list">
             <span>Python</span><span>PyTorch</span><span>TensorFlow</span><span>Keras</span><span>MATLAB</span><span>Simulink</span><span>SciPy</span><span>librosa</span><span>PyWavelets</span><span>Conditional GANs</span><span>Self-attention</span><span>1D / 2D CNNs</span><span>Copulas</span><span>Coupled HMMs</span><span>STFT · CWT · MFCC</span><span>Welch / multitaper PSD</span><span>TensorFlow Lite</span><span>ESP32</span><span>I²C sensors</span><span>Git</span><span>Linux</span><span>LaTeX</span>
           </div>
         </div>
@@ -164,13 +164,14 @@
             <p>I help researchers, engineers and product teams get reliable answers from messy real-world signals — with clear methods, reproducible outputs and stated limits.</p>
             <a class="btn btn-solid" href="https://www.fiverr.com/zafarahmad577">Hire me on Fiverr <span aria-hidden="true">→</span></a>
           </div>
-          <p class="rating"><span class="stars" aria-hidden="true">★★★★★</span><b>5.0</b> from 6 reviews · Level 1 seller</p>
+          <p class="rating"><span class="stars" aria-hidden="true">★★★★★</span><b>5.0</b> from 6 reviews · Level 1 seller · profile snapshot, 12 October 2026</p>
           <ul class="services">
-            <li><span class="svc-idx">01</span><div><h3>Spectral analysis of audio</h3><p>Frequency response, dynamic range, loudness, noise floor and channel separation, compared across recording conditions in a structured report.</p></div></li>
+            <li><span class="svc-idx">01</span><div><h3>Spectral analysis of audio</h3><p>Digital spectra, level, noise-floor and channel comparisons across recording conditions, with a structured report and stated measurement limits.</p></div></li>
             <li><span class="svc-idx">02</span><div><h3>Biomedical &amp; audio DSP</h3><p>Filtering, segmentation, feature extraction and recording investigation for PCG, ECG and difficult audio.</p></div></li>
-            <li><span class="svc-idx">03</span><div><h3>Deep-learning signal classifiers</h3><p>Models for ECG, PCG and EEG classification, from feature design to evaluation and compact export.</p></div></li>
+            <li><span class="svc-idx">03</span><div><h3>Deep-learning signal classifiers</h3><p>ECG, heart-sound and acoustic classification projects, with data, evaluation and deliverables agreed before development.</p></div></li>
             <li><span class="svc-idx">04</span><div><h3>Wearable monitoring prototypes</h3><p>Sensor integration and signal pipelines for wearable ECG and PPG prototypes.</p></div></li>
           </ul>
+          <h3 class="reviews-title">Selected public Fiverr reviews</h3>
           <div class="quotes">
             <blockquote><p>“He keeps timelines and even for a not so tech person made me understand the steps and the processes.”</p><footer>Fiverr client · United States</footer></blockquote>
             <blockquote><p>“As always Zafar was receptive, involved and exceeded all expectations.”</p><footer>Fiverr client · United States · ongoing collaboration</footer></blockquote>
@@ -188,7 +189,7 @@
             <summary><span class="acc-main"><b>CAREON · NUST</b><span>Research Assistant &amp; Team Supervisor · Islamabad</span></span><span class="acc-date">Dec 2025 — Present</span></summary>
             <ul>
               <li>Lead technical work on a wearable research prototype that records time-aligned ECG and PPG with an inertial sensor for motion-artefact analysis.</li>
-              <li>Set the sampling plan, flagged the 12-bit microcontroller ADC as a timing-precision risk and specified a 16-bit external ADC as the fallback.</li>
+              <li>Set sampling and synchronisation targets, identified the microcontroller ADC’s amplitude-resolution limits and specified a 16-bit external ADC fallback.</li>
               <li>Supervise three research apprentices across embedded firmware, sensor integration, signal processing and the cloud data pipeline; coordinated pilot recordings with consenting volunteers.</li>
               <li>Led the blind cross-device audit of the PCG-to-ECG reconstruction model on 338 record pairs; it did not establish successful transfer to the new hardware.</li>
             </ul>
@@ -198,15 +199,15 @@
             <ul>
               <li>Designed band-selective pitch augmentation that keeps the diagnostic band intact, with an MFCC-based 1D CNN for five-class heart-sound classification (EUSIPCO 2024, first author).</li>
               <li>Developing a copula-based coupled hidden Markov model for simultaneous ECG and PCG (since September 2024).</li>
-              <li>Exploratory ECG–PCG dependence analysis at rest and during exercise: pooled sample-level correlation proved weak because it ignores event synchronisation, which motivates event-level hidden states.</li>
+              <li>Exploratory ECG–PCG dependence analysis at rest and during exercise: pooled sample-level correlation was weak; the ongoing formulation examines event-level dependence and synchronisation.</li>
               <li>Co-wrote a submitted grant proposal on simultaneous PCG and ECG analysis (Qatar University Office of Research Support, September 2025).</li>
             </ul>
           </details>
           <details>
             <summary><span class="acc-main"><b>Freelance · Fiverr</b><span>Audio &amp; biomedical signal-processing engineer · Remote</span></span><span class="acc-date">2024 — Present</span></summary>
             <ul>
-              <li>Recording investigation, repeated acoustic comparison reports, compact-model export and an offline audio-to-motion prototype for international clients.</li>
-              <li>5.0 rating across six reviews; clients highlight clear explanations, follow-up questions and on-time delivery.</li>
+              <li>Recording investigation, repeated acoustic comparison reports and an offline audio-to-motion prototype for international clients. The engineering portfolio also documents a compact-model export workflow with scope stated in the case study.</li>
+              <li>A 5.0 rating across six reviews in the 12 October 2026 profile snapshot; clients highlight clear explanations and on-time delivery.</li>
             </ul>
           </details>
           <details>
@@ -229,14 +230,15 @@
       <!-- Publications -->
       <section class="block" id="publications" aria-labelledby="pubs-title">
         <h2 id="pubs-title" class="block-title"><span class="idx">07</span>Publications &amp; talks</h2>
+        <p class="publication-note">Journal statuses below were last reported on 9 October 2026. These manuscripts are not accepted or published; conference papers and congress presentations are listed separately.</p>
         <ol class="pubs">
           <li><span class="pill pill-ok">Published</span><div><p class="pub-title">Phonocardiogram Classification Based on 1D CNN with Pitch-Shifting and Signal Uniformity Techniques</p><p class="pub-meta"><b>Z. Ahmad</b>, M. S. Khan, M. E. H. Chowdhury, S. Zughaier, W. H. Ibrahim · EUSIPCO 2024, pp. 1536–1540 · <a href="https://doi.org/10.23919/EUSIPCO63174.2024.10715037">DOI</a></p></div></li>
           <li><span class="pill pill-ok">Published</span><div><p class="pub-title">Automatic Detection of Paediatric Congenital Heart Diseases from Phonocardiogram Signals</p><p class="pub-meta"><b>Z. Ahmad</b>, M. Zeeshan, A. Sohail, Fazal-e-Haq, M. Haris, M. U. Khan, S. S. Hussain, M. S. Khan · ICAI 2023, pp. 188–195 · <a href="https://doi.org/10.1109/ICAI58407.2023.10136668">DOI</a></p></div></li>
           <li><span class="pill pill-rev">Minor revision</span><div><p class="pub-title">PCG-to-ECG Signal Reconstruction Using Conditional GAN with Multi-Scale Attention</p><p class="pub-meta"><b>Z. Ahmad</b> et al. · IEEE Journal of Biomedical and Health Informatics · revised July 2026; under review, not yet accepted</p></div></li>
           <li><span class="pill pill-rev">Major revision</span><div><p class="pub-title">Synthetic-ECG-gated phonocardiography for paediatric heart-murmur characterisation: a cross-modal deep-learning method</p><p class="pub-meta"><b>Z. Ahmad</b> et al. · European Heart Journal – Digital Health · revision requested September 2026; not yet accepted</p></div></li>
-          <li><span class="pill">Under review</span><div><p class="pub-title">Parallel multi-scale analysis for paediatric heart disease classification from phonocardiograms</p><p class="pub-meta">M. S. Khan, <b>Z. Ahmad</b>, H. Nayab · IEEE Journal of Selected Topics in Signal Processing · submitted November 2025</p></div></li>
+          <li><span class="pill">Last reported</span><div><p class="pub-title">Parallel multi-scale analysis for paediatric heart disease classification from phonocardiograms</p><p class="pub-meta">M. S. Khan, <b>Z. Ahmad</b>, H. Nayab · IEEE Journal of Selected Topics in Signal Processing · submitted November 2025; last reported under review as of 9 October 2026</p></div></li>
           <li><span class="pill pill-talk">ESC 2026</span><div><p class="pub-title">Synthetic ECG-guided temporal gating improves paediatric murmur grading, timing, and shape classification on the CirCor DigiScope dataset</p><p class="pub-meta">First author &amp; presenter · 28 Aug 2026 · abstract 83190 · <a href="https://esc365.escardio.org/presentation/326239">ESC 365</a> · title as presented; superseded by the <a href="research.html#current-evaluation">October evaluation</a></p></div></li>
-          <li><span class="pill pill-talk">ESC 2026</span><div><p class="pub-title">An explainable calibrated concept bottleneck model with evidence-constrained large language model reporting for multi-label valvular heart disease screening from 12-lead ECGs</p><p class="pub-meta">Presenter · technical supervision · 31 Aug 2026 · abstract 86479 · <a href="https://esc365.escardio.org/presentation/326198">ESC 365</a></p></div></li>
+          <li><span class="pill pill-talk">ESC 2026</span><div><p class="pub-title">An explainable calibrated concept bottleneck model with evidence-constrained large language model reporting for multi-label valvular heart disease screening from 12-lead ECGs</p><p class="pub-meta">Co-author &amp; presenter · technical supervision · 31 Aug 2026 · abstract 86479 · <a href="https://esc365.escardio.org/presentation/326198">ESC 365</a></p></div></li>
         </ol>
         <p class="small">Grant proposals co-written (submitted, not awarded): HEC Pakistan National Research Programme for Universities, and Qatar University Office of Research Support, both September 2025.</p>
       </section>

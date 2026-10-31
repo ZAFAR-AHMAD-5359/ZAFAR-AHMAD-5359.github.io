@@ -1,0 +1,76 @@
+/* One token sheet for every route: palette, type scale, measure, shape. Loaded before the page stylesheets. */
+:root,
+:root[data-theme="dark"] {
+  --bg: #0a0e14;
+  --bg-2: #0d121a;
+  --surface: #111824;
+  --surface-2: #151e2c;
+  --border: #223044;
+  --border-soft: #1a2535;
+  --border-strong: #324560;
+  --text: #e6edf3;
+  --muted: #95a3b6;
+  --faint: #8a99ae;
+  --brand: #22d3ee;
+  --brand-ink: #04141a;
+  --sig-ecg: #fb7185;
+  --sig-pcg: var(--brand);
+  --sig-ppg: #d9accc;
+  --sig-imu: #95a3b6;
+  --accent-audio: #78baff;
+  --ok: #34d399;
+  --warn: #fbbf24;
+  --fig-guide: #6f8299;
+  --fig-grid: #223044;
+  --fig-box: #151e2c;
+  --grid: rgba(34, 211, 238, .055);
+  --shadow: 0 1px 0 rgba(255, 255, 255, .03), 0 18px 40px -24px rgba(0, 0, 0, .8);
+  color-scheme: dark;
+}
+:root[data-theme="light"] {
+  --bg: #f6f8fb;
+  --bg-2: #eef2f7;
+  --surface: #ffffff;
+  --surface-2: #f1f4f9;
+  --border: #d5deea;
+  --border-soft: #e3e9f1;
+  --border-strong: #b9c6d6;
+  --text: #0d1726;
+  --muted: #475569;
+  --faint: #4e5f77;
+  --brand: #0b6a84;
+  --brand-ink: #ffffff;
+  --sig-ecg: #be123c;
+  --sig-pcg: var(--brand);
+  --sig-ppg: #704260;
+  --sig-imu: #64748b;
+  --accent-audio: #244ec3;
+  --ok: #047857;
+  --warn: #a1480a;
+  --fig-guide: #8292a8;
+  --fig-grid: #d5deea;
+  --fig-box: #f3f6fa;
+  --grid: rgba(14, 116, 144, .07);
+  --shadow: 0 1px 0 rgba(255, 255, 255, .8), 0 18px 40px -26px rgba(15, 23, 42, .35);
+  color-scheme: light;
+}
+:root {
+  /* Nine-step type scale on a 16 px root; 12.5 px is the floor. */
+  --fs-100: .78125rem;
+  --fs-200: .8125rem;
+  --fs-300: .875rem;
+  --fs-400: 1rem;
+  --fs-500: 1.125rem;
+  --fs-600: 1.25rem;
+  --fs-700: 1.5rem;
+  --fs-800: 2rem;
+  --fs-900: clamp(2rem, 4vw, 2.75rem);
+  --measure: 36rem;
+  --measure-wide: 40rem;
+  --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  --display: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --r-1: 6px;
+  --r-2: 10px;
+  --r-3: 14px;
+}

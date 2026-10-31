@@ -83,3 +83,13 @@
 /* Without the script there are no traces to animate or controls to operate. */
 html:not(.pipeline-ready) .system-figure *{animation:none!important}
 html:not(.pipeline-ready) #motion-toggle,html:not(.pipeline-ready) .system-step-buttons,html:not(.pipeline-ready) .segmented{display:none!important}
+
+/* Opt-in motion: the static state shows complete traces and settled packets, not frame zero of an animation. */
+.system-figure.is-paused .source-signal path{animation:none;stroke-dashoffset:0;opacity:1}
+.system-figure.is-paused .beat-rings>span{animation:none;opacity:.15;transform:scale(1.2)}
+.system-figure.is-paused .beat-rings>span:nth-child(2){transform:scale(1.4)}
+.system-figure.is-paused .beat-rings>span:nth-child(3){display:none}
+.system-figure.is-paused .engine-scan{display:none}
+.system-figure.is-paused .flow-connector>i{animation:none;opacity:1;left:50%}
+.system-figure.is-paused .incoming-waves path,.system-figure.is-paused .heart-symbol,.system-figure.is-paused .sensor-inner,.system-figure.is-paused .grade-bars i{animation:none}
+.system-figure.is-paused .sensor-inner{stroke:var(--signal);fill:#d17a8620}

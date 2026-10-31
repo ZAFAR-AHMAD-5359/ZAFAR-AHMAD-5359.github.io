@@ -1,6 +1,6 @@
 PHONOAXIS — VENTURE OVERVIEW
 Biosignal & Acoustic Engineering
-Updated 13 October 2026 | Founder: Zafar Ahmad
+Updated 31 October 2026 | Founder: Zafar Ahmad
 https://zafar-ahmad-5359.github.io/startup.html
 
 PhonoAxis connects practical audio and signal-processing project work with a parallel cardiovascular research direction. It is a venture in development.
@@ -9,6 +9,7 @@ ENGINEERING TASKS
 - Recording analysis and repeated comparisons: processing outputs, diagnostic plots and a report with defined metrics and interpretation limits.
 - Python/MATLAB workflows: batch analysis, feature extraction, event rules and documented outputs.
 - Compact-model prototypes: feature preparation, recorded-example evaluation and export preparation within an agreed scope; target-device testing is separate.
+Enquiries come to me directly; scope, acceptance checks and sharing boundaries are agreed before work begins.
 
 FOUNDER ENGINEERING EXPERIENCE
 The portfolio documents investigation of four difficult recordings, repeated acoustic reporting including a 156-combination report, and an offline audio-to-motion prototype. It also describes a compact-classifier project workflow. These are project scopes, rather than company traction figures.
@@ -17,12 +18,12 @@ A separately authored synthetic recording-comparison example includes its source
 https://zafar-ahmad-5359.github.io/audio.html#comparison-demo
 
 CARDIAC RESEARCH
-The research investigates an acoustic timing reference for phase-aware murmur characterisation. In the October 2026 patient-grouped dataset evaluation, expert-reviewed phase boundaries provided useful information; the tested synthetic-ECG timing route did not establish a downstream advantage over equal-time windows. Reliable automatic timing and clinical transfer remain open research questions.
-Two first-author journal manuscripts are in revision (status as of 9 October 2026): IEEE Journal of Biomedical and Health Informatics, minor revision; European Heart Journal – Digital Health, major revision. Neither is accepted or published, and no clinical-readiness claim is made.
+The research investigates where cardiac-phase boundaries should come from when a stethoscope recording has no ECG, so that murmur grade, timing and shape can be read in phase. In the October 2026 patient-grouped re-evaluation, expert-reviewed phase boundaries carried useful information, and the thesis’s synthetic-ECG route, with phases fixed at its reconstructed R-peaks, did not separate from equal-time windows. A pre-registered comparison of learnt, acoustic and expert-reviewed boundary sources (analysis plan frozen before any arm was scored) has been completed for the journal revision; its findings will be summarised on the research page once the revision is submitted. Reliable automatic timing across devices and cohorts, and clinical transfer, remain open research questions.
+Two first-author journal manuscripts are in revision (IEEE Journal of Biomedical and Health Informatics, second minor revision requested October 2026; European Heart Journal – Digital Health, major revision requested September 2026, revised manuscript prepared). Neither is accepted or published, and no clinical-readiness claim is made. Both ESC Congress 2026 abstracts are published in the European Heart Journal supplement (volume 47, Supplement 1).
 https://zafar-ahmad-5359.github.io/research.html
 
 PROPOSED NEXT STEPS
-Agree focused engineering inputs, outputs and acceptance criteria; deliver an inspectable workflow and document its limits. In parallel, test whether an automatic timing method can preserve the value of reliable phase information, then evaluate cross-device/cohort transfer and the requirements of a supported research application.
+Agree focused engineering inputs, outputs and acceptance criteria; deliver an inspectable workflow and document its limits. In parallel, evaluate learnt cardiac timing across devices, cohorts and heart-rate ranges, then establish the requirements of a supported research application with research and clinical collaborators.
 
 START A CONVERSATION
 Email the goal, input format and approximate duration or volume, acquisition conditions, required outputs and any target platform or deadline. Please describe the task before sending any recordings.

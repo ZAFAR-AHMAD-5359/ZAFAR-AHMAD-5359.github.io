@@ -2,45 +2,26 @@
    Layouts, research copy and illustrative pipeline behaviour remain in their
    existing files. This layer supplies semantic surfaces and theme-aware colour. */
 :root,
-[data-theme="dark"] {
-  --portfolio-bg: #0a0e14;
-  --portfolio-surface: #111824;
-  --portfolio-surface-2: #151e2c;
-  --portfolio-text: #e6edf3;
-  --portfolio-muted: #95a3b6;
-  --portfolio-faint: #8797ad;
-  --portfolio-line: #29384e;
-  --portfolio-soft-line: #1d2b3d;
-  --portfolio-brand: #22d3ee;
-  --portfolio-grid: rgb(34 211 238 / 4%);
-  --portfolio-accent-ink: #08131e;
-  --portfolio-research: #fb91a7;
-  --portfolio-audio: #78baff;
-  --portfolio-venture: #d9accc;
-  --portfolio-success: #70dfb3;
-  --portfolio-review: #f6c56a;
-  --portfolio-shadow: 0 14px 36px -26px rgb(0 0 0 / 75%);
-  color-scheme: dark;
-}
+[data-theme="dark"],
 [data-theme="light"] {
-  --portfolio-bg: #f6f8fb;
-  --portfolio-surface: #ffffff;
-  --portfolio-surface-2: #eef3f8;
-  --portfolio-text: #0d1726;
-  --portfolio-muted: #475569;
-  --portfolio-faint: #5e6e84;
-  --portfolio-line: #d5deea;
-  --portfolio-soft-line: #e3e9f1;
-  --portfolio-brand: #0e7490;
-  --portfolio-grid: rgb(14 116 144 / 5%);
-  --portfolio-accent-ink: #ffffff;
-  --portfolio-research: #a72439;
-  --portfolio-audio: #244ec3;
-  --portfolio-venture: #704260;
-  --portfolio-success: #047857;
-  --portfolio-review: #805316;
-  --portfolio-shadow: 0 14px 36px -27px rgb(15 23 42 / 28%);
-  color-scheme: light;
+  /* Aliases onto the shared token sheet (tokens.css): one palette for every route. */
+  --portfolio-bg: var(--bg);
+  --portfolio-surface: var(--surface);
+  --portfolio-surface-2: var(--surface-2);
+  --portfolio-text: var(--text);
+  --portfolio-muted: var(--muted);
+  --portfolio-faint: var(--faint);
+  --portfolio-line: var(--border);
+  --portfolio-soft-line: var(--border-soft);
+  --portfolio-brand: var(--brand);
+  --portfolio-grid: var(--grid);
+  --portfolio-accent-ink: var(--brand-ink);
+  --portfolio-research: var(--sig-ecg);
+  --portfolio-audio: var(--accent-audio);
+  --portfolio-venture: var(--sig-ppg);
+  --portfolio-success: var(--ok);
+  --portfolio-review: var(--warn);
+  --portfolio-shadow: var(--shadow);
 }
 
 body.portfolio-page {
@@ -51,7 +32,7 @@ body.portfolio-page {
   --accent: var(--portfolio-research);
   --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --serif: 'Space Grotesk', 'Inter', system-ui, sans-serif;
-  --shell: 1180px;
+  --shell: 1080px;
   background-color: var(--portfolio-bg);
   background-image: linear-gradient(var(--portfolio-grid) 1px, transparent 1px),
     linear-gradient(90deg, var(--portfolio-grid) 1px, transparent 1px);
@@ -313,7 +294,7 @@ html:not(.nav-ready) .portfolio-page .site-header { position: relative; }
 .portfolio-page .details-grid p,
 .portfolio-page .status-grid p { font-size: .94rem; line-height: 1.75; }
 .portfolio-page .status-grid article > span {
-  font: 500 .75rem/1.6 'JetBrains Mono', monospace;
+  font: 500 var(--fs-100)/1.6 var(--sans);
 }
 .portfolio-page .steps::before { color: var(--accent); }
 .portfolio-page .steps li::before { font: 500 1.45rem/1.45 'JetBrains Mono', monospace; }
@@ -399,7 +380,7 @@ html:not(.nav-ready) .portfolio-page .site-header { position: relative; }
 .portfolio-page .contact .button { background: var(--accent); color: var(--portfolio-accent-ink); border-color: var(--accent); }
 .portfolio-page .contact .button.secondary { background: transparent; color: var(--portfolio-text); border-color: var(--portfolio-line); }
 .portfolio-page .contact a:focus-visible { outline-color: var(--accent); }
-.portfolio-page .footer { font-size: .78rem; color: var(--portfolio-faint); padding: 26px 0; }
+.portfolio-page .footer { font-size: var(--fs-100); color: var(--portfolio-faint); padding: 26px 0; }
 .portfolio-page .footer a { color: var(--portfolio-muted); }
 .portfolio-page .footer a:hover { color: var(--accent); }
 
@@ -491,3 +472,65 @@ html:not(.nav-ready) .portfolio-page .site-header { position: relative; }
   .portfolio-page .signal-lab,
   .portfolio-page .system-figure { background: #fff!important; color: #000!important; }
 }
+
+/* 31 October 2026: shared type scale and measure, brand-coloured controls, new research components. */
+.portfolio-page .eyebrow,.portfolio-page .section-label,.portfolio-page .tiny-label{font-family:var(--sans);font-weight:600;font-size:var(--fs-200);letter-spacing:.08em;text-transform:uppercase}
+.portfolio-page .badge,.portfolio-page .tag{font-family:var(--sans);font-size:var(--fs-100)}
+.portfolio-page .meta-tag{display:inline-block;font:500 var(--fs-200)/1.5 var(--sans);color:var(--portfolio-muted)}
+.portfolio-page .project-content>p,.portfolio-page .project-content details p,.portfolio-page .publication p,.portfolio-page .timeline-item p,.portfolio-page .doctoral-bridge,.portfolio-page .research-question,.portfolio-page .note,.portfolio-page .section-intro,.portfolio-page .demo-block>p,.portfolio-page .service-proof p,.portfolio-page .ownership-note,.portfolio-page #system-explanation,.portfolio-page .lab-caption p,.portfolio-page .hero-copy,.portfolio-page .credential-line,.portfolio-page .status-grid p,.portfolio-page .details-grid p,.portfolio-page .steps p,.portfolio-page .facts dd{max-width:var(--measure)}
+.portfolio-page figcaption,.portfolio-page .system-figure figcaption,.portfolio-page .timeline-item h4,.portfolio-page .publication h3,.portfolio-page .publication h4,.portfolio-page .subsection-head{max-width:var(--measure-wide)}
+.portfolio-page .publication h3,.portfolio-page .publication h4{font-size:var(--fs-500);line-height:1.4}
+.portfolio-page .subsection-head{font:600 var(--fs-200)/1.5 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.portfolio-page .section-top h2,.portfolio-page .split h2,.portfolio-page .contact h2{font-size:var(--fs-800)}
+.portfolio-page .page-hero h1{font-size:var(--fs-900)}
+.portfolio-page .project-content h3{font-size:var(--fs-600)}
+.portfolio-page .button,.portfolio-page .contact .button{background:var(--brand);border-color:var(--brand);color:var(--brand-ink)}
+.portfolio-page .button.secondary,.portfolio-page .contact .button.secondary{background:var(--surface);color:var(--text);border-color:var(--border)}
+.portfolio-page .button.secondary:hover{border-color:var(--brand);color:var(--brand)}
+@media (min-width:761px){.portfolio-page .project{grid-template-columns:minmax(0,220px) minmax(0,1fr)}}
+@media (max-width:1000px){.portfolio-page .page-hero{grid-template-columns:1fr}.portfolio-page .hero-aside{max-width:var(--measure-wide)}}
+.orcid-icon{width:15px;height:15px;vertical-align:-2px;margin-right:6px}
+.portfolio-page .orcid-link{overflow-wrap:anywhere}
+.portfolio-page .availability{margin-top:10px;color:var(--portfolio-text);font-weight:500}
+.portfolio-page .arc{list-style:none;margin:22px 0;padding:0;display:grid;gap:0;border-left:2px solid var(--portfolio-line);counter-reset:arc}
+.portfolio-page .arc li{position:relative;padding:0 0 18px 22px;counter-increment:arc;max-width:var(--measure-wide)}
+.portfolio-page .arc li::before{content:'';position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--portfolio-surface);border:2px solid var(--accent)}
+.portfolio-page .arc li:last-child{padding-bottom:0}
+.portfolio-page .arc .tiny-label{display:block;color:var(--portfolio-faint);margin-bottom:4px}
+.portfolio-page .arc h4{font-size:var(--fs-500);margin-bottom:6px}
+.portfolio-page .arc p{font-size:var(--fs-300);line-height:1.65;color:var(--portfolio-muted);max-width:var(--measure)}
+.portfolio-page .evaluation-flow{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.portfolio-page .evaluation-step p,.portfolio-page .evaluation-comparator p{font-size:var(--fs-300)}
+@media (min-width:761px){.portfolio-page .evaluation-comparators{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:600px){.portfolio-page .evaluation-flow{grid-template-columns:1fr}}
+.portfolio-page .exhibits a{overflow-wrap:anywhere}
+.portfolio-page .corrections{margin-top:22px;max-width:var(--measure-wide)}
+.portfolio-page .updates{list-style:none;margin:0;padding:0;border-top:1px solid var(--portfolio-line)}
+.portfolio-page .updates li{display:grid;grid-template-columns:150px minmax(0,1fr);gap:18px;padding:12px 0;border-bottom:1px solid var(--portfolio-line)}
+.portfolio-page .updates time{font-family:var(--mono);font-size:var(--fs-200);color:var(--portfolio-faint);padding-top:3px}
+.portfolio-page .updates p{font-size:var(--fs-300);line-height:1.6;max-width:var(--measure);margin:0}
+.portfolio-page .updates-earlier{border-top:0;padding:14px 0 0}
+.portfolio-page .updates-earlier summary{font:500 var(--fs-300)/1.5 var(--sans);color:var(--accent)}
+.portfolio-page .updates-earlier .updates{margin-top:12px}
+.portfolio-page .supervision{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:10px}
+.portfolio-page .supervision li{padding:14px 16px;border:1px solid var(--portfolio-line);border-left:2px solid var(--accent);border-radius:0 var(--r-2) var(--r-2) 0;background:var(--portfolio-surface);font-size:var(--fs-300);line-height:1.65;color:var(--portfolio-muted);max-width:var(--measure-wide)}
+.portfolio-page .supervision b{color:var(--portfolio-text);font-weight:600}
+.portfolio-page .doctoral-statement{font-size:var(--fs-500);line-height:1.65;max-width:var(--measure-wide);margin:0 0 24px;color:var(--portfolio-text)}
+.portfolio-page .interests{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.portfolio-page .interests h3{font-size:var(--fs-500)}
+.fig-wrap{display:grid;gap:14px;align-items:start;margin:22px 0}
+.fig-card{border:1px solid var(--portfolio-line);border-radius:var(--r-3);background:var(--portfolio-surface);padding:14px;box-shadow:var(--portfolio-shadow)}
+.fig-card svg{display:block;width:100%;height:auto}
+.fig-wrap figcaption{font-size:var(--fs-200);color:var(--portfolio-muted);line-height:1.55;max-width:var(--measure-wide);margin:0}
+.fig-wrap figcaption .fig-label{display:block;font:600 var(--fs-100)/1.6 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-bottom:4px}
+@media (min-width:1001px){.fig-wrap{grid-template-columns:minmax(0,560px) minmax(0,1fr)}}
+@media (min-width:761px) and (max-width:1000px){.fig-card{max-width:600px}}
+@media (max-width:760px){.fig-card{padding:0;border:0;background:transparent;box-shadow:none;overflow-x:auto;-webkit-overflow-scrolling:touch}.fig-card svg{min-width:540px}.fig-wrap::before{content:'Scroll the figure sideways on a narrow screen.';font-size:var(--fs-200);color:var(--portfolio-faint)}.portfolio-page .updates li{grid-template-columns:minmax(0,1fr);gap:2px}.portfolio-page .publication,.portfolio-page .timeline-item{grid-template-columns:minmax(0,1fr)}}
+.portfolio-page .updates li>*,.portfolio-page .arc li>*,.portfolio-page .supervision li>*{min-width:0}
+.portfolio-page .open-materials{margin-top:18px;font-size:var(--fs-300);line-height:1.65;color:var(--portfolio-muted);max-width:var(--measure-wide)}
+.portfolio-page .open-materials strong{color:var(--portfolio-text)}
+.portfolio-page .thesis-summary{margin-top:14px;border-top:1px solid var(--portfolio-line)}
+.portfolio-page .thesis-summary p{max-width:var(--measure)}
+.portfolio-page .footer{flex-wrap:wrap;font-family:var(--sans)}
+.portfolio-page .footer-links{gap:8px 18px}
+.portfolio-page .facts{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}

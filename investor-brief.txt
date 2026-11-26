@@ -1,6 +1,6 @@
 PHONOAXIS — VENTURE OVERVIEW
 Biosignal & Acoustic Engineering
-Updated 31 October 2026 | Founder: Zafar Ahmad
+Updated 26 November 2026 | Founder: Zafar Ahmad
 https://zafar-ahmad-5359.github.io/startup.html
 
 PhonoAxis connects practical audio and signal-processing project work with a parallel cardiovascular research direction. It is a venture in development.
@@ -19,7 +19,7 @@ https://zafar-ahmad-5359.github.io/audio.html#comparison-demo
 
 CARDIAC RESEARCH
 The research investigates where cardiac-phase boundaries should come from when a stethoscope recording has no ECG, so that murmur grade, timing and shape can be read in phase. In the October 2026 patient-grouped re-evaluation, expert-reviewed phase boundaries carried useful information, and the thesis’s synthetic-ECG route, with phases fixed at its reconstructed R-peaks, did not separate from equal-time windows. A pre-registered comparison of learnt, acoustic and expert-reviewed boundary sources (analysis plan frozen before any arm was scored) was submitted with the journal revision (R1), now under review; its findings will be summarised on the research page once the review concludes. Reliable automatic timing across devices and cohorts, and clinical transfer, remain open research questions.
-Two first-author journal manuscripts are in peer review (IEEE Journal of Biomedical and Health Informatics, second minor revision requested October 2026, revision prepared; European Heart Journal – Digital Health, revised manuscript (R1) submitted October 2026, under review). Neither is accepted or published, and no clinical-readiness claim is made. Both ESC Congress 2026 abstracts are published in the European Heart Journal supplement (volume 47, Supplement 1).
+One first-author journal article is accepted for publication (IEEE Journal of Biomedical and Health Informatics, 23 November 2026). A second first-author manuscript is in peer review (European Heart Journal – Digital Health, revised manuscript (R1) submitted October 2026). No clinical-readiness claim is made. Both ESC Congress 2026 abstracts are published in the European Heart Journal supplement (volume 47, Supplement 1).
 https://zafar-ahmad-5359.github.io/research.html
 
 PROPOSED NEXT STEPS

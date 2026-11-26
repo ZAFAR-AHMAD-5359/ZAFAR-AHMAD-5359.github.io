@@ -1,8 +1,8 @@
 {
-  "index.html": "bd9338cfcedb9fb458af10a6eaae612e78547116e5b1fe2f1bc1fad018133a70",
-  "research.html": "3798c16e472e1c155e877ae12edecd32dcce6d8688895a7bdd521c0d692d6a7f",
-  "audio.html": "126ee94b9c7868b666323fce00b9b6e7107d681fad15f1cbd08575b11151bfd3",
-  "startup.html": "8aa9f21e35306774e7c954c71cd69d234116398db7fbdbc89cdddcc07332944a",
+  "index.html": "39a9151f8e9b98a07023bd764106842da5ca4868c4297bae2765001d6f47431e",
+  "research.html": "339852d7596d21929bdccadb474f45eccaafa538355a40ef84723895b8149864",
+  "audio.html": "5992b5c1eca640a09c89a50dd592a32eb347dfa4781f68e3c726711edc292ccd",
+  "startup.html": "cf872c875ae72a998f2a4f89ecc1669f7c500277c3b4e970bad12072d18733cd",
   "styles.css": "a55d61cf6049963d96d2e02d1de0b9712529a32d2bf32ec2190eb35bd0ef3dc5",
   "system.css": "4cbb555fd06ec330d7e4dad6becc1ed96bec92f39e85fe85161eac57a7458b37",
   "app.js": "9a149593fcbf48e38af07ba8d5fa58ecbacf2327f8261c8e3ecf2c2778ab118a",
@@ -14,14 +14,14 @@
   "portfolio-theme.css": "587d349ed833b4efb146158c843a19eee78aa998c0b95cdd606c976013116c1a",
   "assets/zafar-ahmad-240.jpg": "338b7533ef051155613bcb7bbf2cbf1a9923fb6909e92eec7bc3b6fd1d93153f",
   "assets/zafar-ahmad-480.jpg": "396f1d78734097c9fb572f80a627828d094ad59a5d6043220231e5e78863d885",
-  "research-brief.txt": "3577b49ec6192449280d89b2ad8f85bca28efe2cfcee915fec1d9111a9db2189",
-  "investor-brief.txt": "ea676f9b7e701918f12093bdc26a48e7c2cc0a6b2bc51d594b15498ef29192f7",
+  "research-brief.txt": "f35e08664577b5d38c16a2d86ea071b8c4900fb8290337c7c6a7ff41a975df98",
+  "investor-brief.txt": "f6bf765fe87d8740ff2e431e00b8a046ceca9dfcc56f95eb8322041e49fbad55",
   "assets/esc-2026-station-1200.jpg": "825f1e5d440efb8e0cc19b3be04b70fb44f38ec4836e71087529ff92928d7c7e",
   "assets/esc-2026-station-800.jpg": "a42ccf75e25ea9928227e66c4f460a6a8c806bb6686ec48a2e31ea768e516b16",
   "assets/esc-2026-station-480.jpg": "4e3ba30149d6180c01c49922f363769a7585220cb3c7ed58fe27d3f64696c2db",
   "assets/compact-audio-classifier-method.svg": "e32c77419d355c06c8c8e310785bdc5f90467847f6a44dea2bb3ffe34ec56732",
   "assets/offline-audio-haptics-method.svg": "03274033efb092fbf8b4f2ac97d3d0dbb729d9bab7f0d7916e163a3b91593a1e",
-  "downloads/Zafar-Ahmad-Academic-CV.pdf": "74a20c1bb259e87b1084594b607101a944d108183e143a22dd185b860c44dda2",
+  "downloads/Zafar-Ahmad-Academic-CV.pdf": "d7714092b3a57284b8a169c9c9f58c8a58a073ffa0ae8986bd8580c46392970b",
   "assets/phonoaxis-symbol.svg": "cbb8247a7f5bfa136dd316e2fcb7c820dad623d6acb7dcfe4ff7e27759de42d6",
   "assets/phonoaxis-favicon.svg": "a60d4489ef13e4fe6b91a51098c6c93f30f6fbbf033fff1f25630e4cec9776c5",
   "assets/recording-comparison-demo.py": "d3150514d2b76efc092cb260aad1d0a9992b8fd7e66b9f4fd7b99ecd0fcc2b4d",
@@ -30,5 +30,5 @@
   "assets/recording-comparison-demo.txt": "545a0b1e6e4e68844f921503292b5675b1bc5ecb33e2c2dcc4d9fb5923d8216e",
   "assets/portfolio-social-preview.png": "05a24cb284717ff06a1e3241674fff31b7556f04467a6d7986c6ab451056583b",
   "robots.txt": "da7ac46200f0e1caf1de46179f5b1be298f1cde8a9cfac87bf3a6abd3d1eb1c5",
-  "sitemap.xml": "b71b04174b24e2d17cf2288c345f5420b24d81bd7c6e848325f9d89d3865821b"
+  "sitemap.xml": "bedcdf7817b81384ea949c3d2b049838852306df584f8ff23f788706db976ed1"
 }
